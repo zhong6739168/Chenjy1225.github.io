@@ -14,7 +14,7 @@
     var demoContent = [{
         demo_link: 'http://Chenjy1225.github.io/test/Graffiti/3D-Graffiti.html',
         img_link: 'http://ww4.sinaimg.cn/mw690/c584f169gw1f729v4i7agj20p20h4wgt.jpg',
-        code_link: 'https://github.com/Chenjy1225/personalDemo/blob/master/Graffiti/3D-Graffiti.html',
+        code_link: 'https://github.com/Chenjy1225/Chenjy1225.github.io/blob/demo/3D-Graffiti.html',
         title: '3D模型涂鸦',
         core_tech: 'three.js',
         description: '使用three.js。仿照了网站 <a href ="http://www.mohou.com/tools/3dtuya.html">http://www.mohou.com/tools/3dtuya.html</a>3D涂鸦效果的功能效果。'
