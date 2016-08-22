@@ -1,67 +1,67 @@
-# 关于这个简洁明快的博客主题
+# About this Cool Concise Jekyll Blog Theme
 
-随着 jekyll 的版本升级，同时我也想重构我的旧版博客主题，因此在这个月对博客进行了重构加改版，这个仓库存放我的新博客，并且我也会一直使用这个主题。目前基本改版完成，后续可能还会有些细节上的修补。
+With the escalation of jekyll version, but I also want to reconstruct my older blog theme, so I did reconstruction and added some features recently. My new blog theme will still be stored in this repository. I will also use this theme in the future. Now I have done basically, then I will focus on issues that users opend to make theme better.
 
-**博客访问地址：[http://gaohaoyang.github.io/](http://gaohaoyang.github.io/)**。若您喜欢这个新的博客主题，请给我个star以示鼓励吧，欢迎大家使用。
+**My Blog Url: [http://gaohaoyang.github.io/](http://gaohaoyang.github.io/)**. If you like this theme, you can give me a star to encourage me. Welcome everyone to use it.
 
-## 目录
+## Content
 
-* [预览图](#预览图)
-* [各部分详情](#各部分详情)
-    * [主页 Home](#主页-home)
-    * [归档页 Archives](#归档页-archives)
-    * [分类页 Categories](#分类页-categories)
-    * [标签页 Tags](#标签页-tags)
-    * [收藏页 Collections](#收藏页-collections)
-    * [展示页 Demo](#展示页-demo)
-    * [关于页 About](#关于页-about)
-    * [评论](#评论)
-    * [目录 Contents](#目录-contents)
-    * [代码高亮](#代码高亮)
-    * [灯泡效果](#灯泡效果)
-    * [移动端适配](#移动端适配)
+* [Preview](#preview)
+* [Page Details](#page-details)
+    * [Home](#home)
+    * [Archives](#archives)
+    * [Categories](#categories)
+    * [Tags](#tags)
+    * [Collections](#collections)
+    * [Demo](#demo)
+    * [About](#about)
+    * [Comments](#comments)
+    * [Post Contents](#post-contents)
+    * [Code Highlight](#code-highlight)
+    * [Light Shadow](#light-shadow)
+    * [Mobile Adaptation](#mobile-adaptation)
     * [Footer](#footer)
-    * [统计](#统计)
-* [博客主题使用方法](#博客主题使用方法)
-    * [1. 安装 ruby 和 jekyll 环境](#1-安装-ruby-和-jekyll-环境)
-    * [2. 复制博客主题代码](#2-复制博客主题代码)
-    * [3. 修改参数](#3-修改参数)
-        * [基本信息](#基本信息)
-        * [链接信息](#链接信息)
-        * [评论信息](#评论信息)
-        * [统计信息](#统计信息)
-    * [4. 写文章](#4-写文章)
-    * [5. 本地运行](#5-本地运行)
-    * [6. 发布到 GitHub](#6-发布到-github)
-* [捐助 donate](#捐助-donate)
+    * [Statistical Analysis](#statistical-analysis)
+* [Usage](#usage)
+    * [1. Install ruby and jekyll environment](#1-install-ruby-and-jekyll-environment)
+    * [2. Copy theme code](#2-copy-theme-code)
+    * [3. Change parameter](#3-change-parameter)
+        * [Basic info](#basic-info)
+        * [Link info](#link-info)
+        * [Comments info](#comments-info)
+        * [Statistical analysis info](#statistical-analysis-info)
+    * [4. Write post](#4-write-post)
+    * [5. Local launch](#5-local-launch)
+    * [6. Push to GitHub](#6-push-to-github)
+* [Donate](#donate)
 * [Update Log](#update-log)
 * [License](#license)
 
-## 预览图
+## Preview
 
-先上预览图：
+First of all, let's see previews.
 
-主页
+Index Page
 ![index](http://ww3.sinaimg.cn/large/7011d6cfjw1f3bdli86awj211k0oyqen.jpg)
 
-文章页
+Post Page
 ![post](http://ww4.sinaimg.cn/large/7011d6cfjw1f3bdmzb9v6j210p0j7gwn.jpg)
 
-## 各部分详情
+## Page Details
 
-### 主页 Home
+### Home
 
-主页默认展示5篇文章的摘要部分，用户点击标题或阅读全文后进入文章页。右侧为近期文章、分类和标签3块区域，用户可以继续在这部分添加区域，只需修改`index.html`即可。
+Index page show 5 posts excerpt as a default. Readers can click article title or read more button to see full post. There are recent posts area, categories area and tags area at the right part of the index page. You can also add an area at this part, if you change the file `index.html`.
 
-### 归档页 Archives
+### Archives
 
-按照年份归档文章。
+Archive post according to the year.
 
-### 分类页 Categories
+### Categories
 
-按照文章的分类，显示文章。
+Show posts according to the category.
 
-### 标签页 Tags
+### Tags
 
 按照文章的标签显示文章。
 
@@ -313,7 +313,6 @@ Configuration file: E:/GitWorkSpace/blog/_config.yml
 支付宝 | 微信支付 | PayPal
  :---: | :---: | :---:
 ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/gaohaoyang)
-
 
 
 
