@@ -27,12 +27,12 @@ description_footer: Chenjy' blog
 
 # comments
 # two ways to comment, only choose one, and use your own short name
-duoshuo_shortname: 
+duoshuo_shortname: chenjy1225
 disqus_shortname: 
 
 # statistic analysis
-baidu_tongji_id: 
-google_analytics_id: # google 分析追踪id
+baidu_tongji_id: 4550978924d3d4a6fe21f516ac37f0b3
+google_analytics_id: #UA-83031513-1
 
 # Build settings
 markdown: kramdown

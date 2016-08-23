@@ -14,25 +14,11 @@
     var demoContent = [{
         demo_link: 'https://chenjy1225.github.io/ChenjyDemo/giaffiti/3D-Graffiti.html',
         img_link: 'http://ww4.sinaimg.cn/mw690/c584f169gw1f729v4i7agj20p20h4wgt.jpg',
-        code_link: 'https://github.com/Chenjy1225/Chenjy1225.github.io/blob/demo/3D-Graffiti.html',
+        code_link: 'https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/giaffiti',
         title: '3D模型涂鸦',
         core_tech: 'three.js',
         description: '使用three.js。仿照了网站 <a href ="http://www.mohou.com/tools/3dtuya.html">http://www.mohou.com/tools/3dtuya.html</a>3D涂鸦效果的功能效果。'
-    }/*, {
-        demo_link: 'http://gaohaoyang.github.io/mask-fade-out/',
-        img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/demo-fade-out.png',
-        code_link: 'https://github.com/Gaohaoyang/mask-fade-out',
-        title: '遮罩层按指定路径缩小消失',
-        core_tech: 'jQuery CSS',
-        description: '使用 animate 方法，做到兼容 IE8。曾在联想服务官网上线3个月。'
-    }, {
-        demo_link: 'http://gaohaoyang.github.io/ToDo-WebApp/',
-        img_link: 'http://7q5cdt.com1.z0.glb.clouddn.com/blog-todoWebApp.png',
-        code_link: 'https://github.com/Gaohaoyang/ToDo-WebApp',
-        title: '百度前端学院 task0004 ToDo 应用(移动端)',
-        core_tech: 'JavaScript LocalStorage requireJS Sass Gulp XSS',
-        description: '在任务三中，做了一个 PC 端的 ToDo 应用。任务四是将它优化，以适应移动端设备。'
-    }*/];
+    }];
 
     contentInit(demoContent) //内容初始化
     waitImgsLoad() //等待图片加载，并执行布局初始化
