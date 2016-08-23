@@ -12,7 +12,7 @@
      * 内容JSON
      */
     var demoContent = [{
-        demo_link: 'https://chenjy1225.github.io/demo/giaffiti/3D-Graffiti.html',
+        demo_link: 'https://chenjy1225.github.io/ChenjyDemo/giaffiti/3D-Graffiti.html',
         img_link: 'http://ww4.sinaimg.cn/mw690/c584f169gw1f729v4i7agj20p20h4wgt.jpg',
         code_link: 'https://github.com/Chenjy1225/Chenjy1225.github.io/blob/demo/3D-Graffiti.html',
         title: '3D模型涂鸦',
