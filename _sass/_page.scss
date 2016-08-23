@@ -10,7 +10,12 @@
 .page {
     width: 1140px;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: auto;
+    position: absolute;
+    top: 121px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     // word-break: break-all;
     .left {
         width: 75%;
@@ -22,7 +27,7 @@
         >h1 {
             margin-bottom: -10px;
         }
-        a:not([title]){
+        a:not([title]) {
             word-break: break-all;
         }
         ul {
@@ -70,7 +75,6 @@
                         color: #c6cbe9;
                     }
                     a {
-
                         // border: 1px solid #aaa;
                         padding: 0 5px;
                         background-color: #c6cbe9;
@@ -115,7 +119,6 @@
             hyphens: auto;
             >div {
                 padding: 12px 15px;
-
                 // margin-right: -10px;
                 border-bottom: 1px solid #fff;
                 font-size: 16px;
@@ -162,7 +165,6 @@
                 padding-left: 20px;
                 >h2 {
                     font-size: 20px;
-
                     // margin: 0;
                     margin-left: -20px;
                 }
@@ -204,10 +206,8 @@
         }
         .right {
             visibility: hidden;
-
             // display: none;
             position: fixed;
-
             // z-index: 190;
             float: none;
             width: auto;
