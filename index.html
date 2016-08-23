@@ -159,11 +159,12 @@ layout: default
 		<script type="text/javascript" src="../js/three/Projector.js" ></script>
 		<script type="text/javascript" src="../js/three/CanvasRenderer.js"></script>
 		<script type="text/javascript" src="../js/three/Bird.js"></script>
+		<script type="text/javascript" src="../js/device.min.js"></script>
 
 		<script>
 
 			// Based on http://www.openprocessing.org/visuals/?visualID=6910
-
+            
 			var Boid = function() {
 
 				var vector = new THREE.Vector3(),
@@ -460,9 +461,15 @@ layout: default
 
 			var boid, boids;
 
+            var isDesktop  = device.desktop();
+            
+            if(isDesktop){
+            	
 			init();
 			animate();
-
+            }
+            
+             
 			function init() {
 
 				camera = new THREE.PerspectiveCamera( 75, width / height, 1, 10000 );
