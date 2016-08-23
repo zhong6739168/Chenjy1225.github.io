@@ -190,7 +190,8 @@ Syntax Theme: Atom Dark or One Dark
 
 ## Other blogs
 
-* [JS前端开发群月报 -豪情等人维护](http://www.kancloud.cn/jsfront/month/82796)
+* [Mr.doob](https://github.com/mrdoob) 
+ 
 
 ## Comments
 
