@@ -164,6 +164,7 @@ layout: default
 		<script type="text/javascript" src="../js/three/CanvasRenderer.js"></script>
 		<script type="text/javascript" src="../js/three/Bird.js"></script>
 		<script type="text/javascript" src="../js/device.min.js"></script>
+		<script type="text/javascript" src="../js/three/Detector.js"></script>
 
 		<script>
 
@@ -469,7 +470,9 @@ layout: default
         		
         		
         	}
-		
+		    
+			if(!Detector.webgl) Detector.addGetWebGLMessage();		    
+		    
             var output = document.getElementById("output");
             var page = document.getElementById("page");
             var margin = page.offsetLeft;
