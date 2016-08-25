@@ -222,6 +222,7 @@ WebGL渲染器
 * `MeshBasicMaterial` ：基础材质，简单地颜色。
 * `MeshDepthMaterial` ：根据网格到相机的距离计算颜色。
 * `MeshNormalMaterial` ：根据物体表面的法向向量计算颜色。
+* `MeshFaceMaterial` ：一个可以为各个表面指定不同颜色的容器。
 * `MeshLambertMaterial` ：考虑光照效果，创建颜色暗淡不光亮的物体。
 * `MeshPhongMaterial` ：考虑光照效果，创建光亮的物体。
 * `ShaderMaterial` ：自定义着色器程序。
@@ -233,9 +234,11 @@ WebGL渲染器
 * `ID` ：用来标示材质。在创建时赋值。 
 * `name` ：通过这个属性赋予材质名称。
 * `opacity` ：设置材质的透明度。
+* `transparent` ：是否透明。如果为`true`则用`opacity`值渲染物体。
+* `overdraw` ：过度描绘（如果渲染出的物体有缝隙，则可以设为`true`）。
 * `visible` ：设置材质是否可见。
-* `color` ：设置材质的颜色。
-* `wireframe` ：是否渲染成线框。
+* `side` ：决定哪一面应用材质`default：THREE.FrontSide（前面）``THREE.BackSide（后面）``THREE.DoubleSide（双侧）`。
+* `needsUpdate` ：告诉Three.js库材质是否改变了。如果为`true`则使用新的材质刷新缓存。
 
 ## 2DGeometries
 
