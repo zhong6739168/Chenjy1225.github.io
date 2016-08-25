@@ -3,6 +3,10 @@ layout: default
 ---
 
 <div class="page clearfix" id="page" index>
+	<ul class="camera-select" id="select">
+		<li id="def" style="background-color:#dbdfee ;">default</li>
+		<li id="auto">auto</li>
+	</ul>
     <div class="left" id="output">
         <ul>
             {% for post in paginator.posts %}
@@ -447,6 +451,25 @@ layout: default
 		</script>
 
 		<script>
+		window.onload =function(){
+        		
+        		var def = document.getElementById('def');
+        		var auto = document.getElementById('auto');
+        		
+        		def.addEventListener('mousedown',function(){
+        			def.style.backgroundColor = "#dbdfee";
+        			auto.style.backgroundColor = "#bbb";
+        			autoc = false;
+        		},false);
+        		auto.addEventListener('mousedown',function(){      			
+        			def.style.backgroundColor = "#bbb";
+        			auto.style.backgroundColor = "#dbdfee";
+        			autoc = true;
+        		},false);
+        		
+        		
+        	}
+		
             var output = document.getElementById("output");
             var page = document.getElementById("page");
             var margin = page.offsetLeft;
@@ -462,6 +485,8 @@ layout: default
 			var boid, boids;
 
             var isDesktop  = device.desktop();
+            
+            var autoc = false;
             
             if(isDesktop){
             	
@@ -512,8 +537,55 @@ layout: default
 
 				window.addEventListener( 'resize', onWindowResize, false );
                 
+                creatCloud();
+                creatSea();
+			}
+            
+            function creatCloud() {
+				var geometry = new THREE.CubeGeometry(250, 100, 250);
+				var material = new THREE.MeshBasicMaterial({
+					color: 0xeeeeee,
+					opacity: 0.4,
+					side: THREE.DoubleSide
+				});
+
+				for(var i = 0; i < 12; i++) {
+
+					var mesh = new THREE.Mesh(geometry, material);
+					mesh.position.set(Math.random() * 400 + 10, Math.random() * 100 + 400, Math.random() * 400 + 10);
+					scene.add(mesh);
+				}
+				for(var i = 0; i < 12; i++) {
+
+					var mesh = new THREE.Mesh(geometry, material);
+					mesh.position.set(-Math.random() * 400 + 10, Math.random() * 100 + 400, Math.random() * 400 + 10);
+					scene.add(mesh);
+				}
+
 			}
 
+			function creatSea() {
+
+				var size = 200;
+				var geometry = new THREE.CubeGeometry(200, 300, 200);
+				var material = new THREE.MeshBasicMaterial({
+					color: 0x66d9ef,
+					opacity: 0.4,
+					side: THREE.DoubleSide
+				});
+
+				for(var j = 0; j < 8; j++) {
+
+					for(var i = 0; i < 5; i++) {
+						var mesh = new THREE.Mesh(geometry, material);
+						mesh.position.set(-600 + size * j, -440, -1000 + size * (i + 2));
+						mesh.rotation.z = Math.random() * Math.PI;
+						mesh.rotation.x = Math.random() * Math.PI;
+						scene.add(mesh);
+					}
+				}
+			}
+            
 			function onWindowResize() {
 
 				camera.aspect = width / height;
@@ -551,6 +623,8 @@ layout: default
 
 			function render() {
 
+				var cameraBird = birds[0];
+				
 				for ( var i = 0, il = birds.length; i < il; i++ ) {
 
 					boid = boids[ i ];
@@ -568,7 +642,12 @@ layout: default
 					bird.geometry.vertices[ 5 ].y = bird.geometry.vertices[ 4 ].y = Math.sin( bird.phase ) * 5;
 
 				}
-
+				
+                if(autoc){   
+                	
+				   camera.position.set(cameraBird.position.x, cameraBird.position.y , cameraBird.position.z + 25);
+				
+                }
 				renderer.render( scene, camera );
 
 			}
