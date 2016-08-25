@@ -7,11 +7,14 @@
 .clearfix {
     *zoom: 1;
 }
-.page {
+.page_default {
+    position: absolute;
+}
+.page,
+.page_default {
     width: 1140px;
     box-sizing: border-box;
     margin: auto;
-    position: absolute;
     top: 121px;
     bottom: 0;
     left: 0;

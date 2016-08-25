@@ -1,7 +1,7 @@
 #markdown-toc {
     display: none;
 }
-.page[post] {
+.page[post],.page_default[post] {
     .label {
         margin-top: 14px;
         overflow: hidden;
@@ -60,7 +60,7 @@
     }
 }
 @media screen and (max-width: 770px) {
-    .page[post] {
+    .page[post],.page_default[post] {
         .left {
             font-size: 15px;
             h2 {

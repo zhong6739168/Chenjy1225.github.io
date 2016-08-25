@@ -1,4 +1,4 @@
-.page[index] {
+.page[index],.page_default[index] {
     a {
         color: #4d6dad;
         transition: 0.5s ease;
@@ -153,7 +153,7 @@
     }
 }
 @media screen and (max-width: 770px) {
-    .page[index] {
+    .page[index],.page_default[index] {
         .left>ul li {
             h2 {
                 font-size: 22px;
