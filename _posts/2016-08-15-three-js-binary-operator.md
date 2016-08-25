@@ -49,6 +49,7 @@ ThreeBSP库是使用coffee-script写的,所以需要添加coffee-script文件在
 ```
 
 ```js
+
     //实例化两个需要进行操作的物体 （cube1,cube2为两个cube）
     var BSP1 = new ThreeBSP(cube1);
     var BSP2 = new ThreeBSP(cube2);
@@ -66,4 +67,30 @@ ThreeBSP库是使用coffee-script写的,所以需要添加coffee-script文件在
     scene.add(result);
             
 ```
+
+### other way 
+
+three.js也是提供了将几何体组合和合并的方法类似于`union（联合）`函数。
+
+* 对象组合
+
+你可以通过新建一个`THREE.Object3D`对象，然后通过`push()`方法将想要组合的对象放入这个container 中。
+然后你可以通过控制这个`THREE.Object3D`对象，然后来控制组合了的所有对象（避免了单独操作的尴尬）。
+
+```js
+
+	var container =new THREE.Object3D();
+	
+	container.push(cube);
+	
+	container.push(sphere);
+		
+```
+
+
+ ***
+![outPut](http://ww1.sinaimg.cn/mw690/c584f169gw1f76003kr41j20hp0bamxb.jpg)
+
+
+* *[source code obj](https://github.com/Chenjy1225/Chenjy1225.github.io/blob/master/source/three-obj.html)*
 
