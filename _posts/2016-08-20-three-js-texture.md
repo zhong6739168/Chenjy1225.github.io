@@ -87,6 +87,8 @@ var texture = new THREE.ImageUtils.loadTexture("img/text.png");
 
 ```
 
+
 ### other
 
+罗列这些是极为麻烦的，所以
 *learn more from `http://threejs.org/`*
