@@ -22,7 +22,7 @@
     	demo_link: 'https://chenjy1225.github.io/ChenjyDemo/VirtualFactory/VirtualFactory.html',
         img_link: 'http://ww3.sinaimg.cn/mw690/c584f169gw1f7ajv6vvphj20zn0exad7.jpg',
         code_link: 'https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/VirtualFactory',
-        title: '3D模型涂鸦',
+        title: '3D虚拟工厂',
         core_tech: 'three.js',
         description: '使用three.js。简单的模型了工厂流水线的运行情况'
     }];
