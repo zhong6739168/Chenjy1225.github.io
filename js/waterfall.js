@@ -25,6 +25,13 @@
         title: '3D虚拟工厂',
         core_tech: 'three.js',
         description: '使用three.js。简单的模型了工厂流水线的运行情况'
+    },{
+    	demo_link: 'https://chenjy1225.github.io/ChenjyDemo/Factory/public.html',
+        img_link: 'http://ww4.sinaimg.cn/mw690/c584f169gw1f7d2crbv28j20ro0gnacf.jpg',
+        code_link: 'https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/Factory',
+        title: '工厂装配',
+        core_tech: 'Unity3d',
+        description: '使用Unity3d。简单的模型了工厂装配过程的demo'
     }];
 
     contentInit(demoContent) //内容初始化
