@@ -32,6 +32,13 @@
         title: '工厂装配',
         core_tech: 'Unity3d',
         description: '使用Unity3d。简单的模型了工厂装配过程的demo'
+    },{
+    	demo_link: 'https://chenjy1225.github.io/ChenjyDemo/FirstLockControl/FirstLockControl.html',
+        img_link: 'http://ww3.sinaimg.cn/mw690/c584f169gw1f7dw9jpzazj20nv0d6wev.jpg',
+        code_link: 'https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/FirstLockControl',
+        title: '第一人称控件（基于Physijs）',
+        core_tech: 'three.js physijs',
+        description: '使用three.js制作的第一人称控件（锁屏）'
     }];
 
     contentInit(demoContent) //内容初始化
