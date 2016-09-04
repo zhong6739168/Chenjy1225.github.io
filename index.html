@@ -495,6 +495,13 @@ layout: default
             	
 			init();
 			animate();
+            }else{
+            	var page = document.getElementById("page");
+            	page.className = page.className.replace('page_default', ' ');  
+            	page.className += " " + "page";
+            	
+            	var btnSelect = document.getElementById("select");
+            	btnSelect.style.display ="none";
             }
              
 			function init() {
