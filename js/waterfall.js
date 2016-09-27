@@ -39,6 +39,13 @@
         title: '第一人称控件（基于Physijs）',
         core_tech: 'three.js physijs',
         description: '使用three.js制作的第一人称控件（锁屏）'
+    },{
+        demo_link: 'https://chenjy1225.github.io/ChenjyDemo/Ruler3D/Ruler3D.html',
+        img_link: 'http://ww2.sinaimg.cn/mw690/c584f169gw1f88ktdy8rnj20vi0h3gqq.jpg',
+        code_link: 'https://github.com/Chenjy1225/ChenjyDemo/blob/gh-pages/Ruler3D/Ruler3D.html',
+        title: '基准坐标标识器',
+        core_tech: 'three.js',
+        description: '使用three.js制作的基准坐标标识器'
     }];
 
     contentInit(demoContent) //内容初始化
