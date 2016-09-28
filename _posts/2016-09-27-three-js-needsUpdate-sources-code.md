@@ -62,6 +62,7 @@ THREE.Texture.prototype = {
 
 
 ```
+
 ### step2
 
 这个`version = 1`有什么用我们继续看 
