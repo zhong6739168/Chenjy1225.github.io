@@ -192,7 +192,7 @@ R80 `THREE.GeometryUtils.merge()` change to `geometry.merge()`
 
 ```
 
-### 使用`raytracing renderer`和`Web Workers`
+### 使用`Web Workers`
 
 `web worker` 是运行在后台的 JavaScript，它独立于其他脚本，不会影响页面的性能
 我们会发现`Physijs`物理库就是使用这种方式来保证页面的性能。
