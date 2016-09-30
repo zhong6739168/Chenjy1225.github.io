@@ -111,7 +111,7 @@ function timedChunk(items, process, context, callback){
 
 空口白牙
 
-[demo]()
+[demo](https://chenjy1225.github.io/source/JavaScript-timedChunk.html)
 
 
 
