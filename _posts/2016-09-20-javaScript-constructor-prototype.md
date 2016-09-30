@@ -2,8 +2,8 @@
 layout: post
 title:  "javaScript constructor和prototype"
 date:   2016-09-20 20:00:00 +0800
-categories: javaScript
-tags: javaScript
+categories: JavaScript
+tags: JavaScript
 author: JiuYang Chen
 ---
 

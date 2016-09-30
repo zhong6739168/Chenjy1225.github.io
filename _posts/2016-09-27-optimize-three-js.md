@@ -2,8 +2,8 @@
 layout: post
 title:  "three.js 性能优化的几种方法"
 date:   2016-09-27 22:00:00 +0800
-categories: three.js javaScript
-tags: three.js javaScript
+categories: three.js JavaScript
+tags: three.js JavaScript
 author: JiuYang Chen
 ---
 
@@ -255,12 +255,70 @@ three_workers.js：
 
 *https://threejs.org/examples/?q=sand#raytracing_sandbox*
 
+function timedChunk(items, process, context, callback){
+    var todo = items.concat();   //create a clone of the original
+
+    setTimeout(function(){
+
+        var start = +new Date();
+
+        do {
+             process.call(context, todo.shift());
+        } while (todo.length > 0 && (+new Date() - start < 50));
+
+        if (todo.length > 0){
+            setTimeout(arguments.callee, 25);
+        } else {
+            callback(items);
+        }
+    }, 25);
+}
 
 ## 分时加载
 
 可以参照：
 
 *https://www.nczonline.net/blog/2009/08/11/timed-array-processing-in-javascript/*
+
+分时加载算法(大数组)
+
+调查显示100ms内的响应能让用户感觉非常流畅。50ms是 `Nicholas` 针对 `JavaScript` 得出的最佳经验值。
+
+setTimeout 延时25ms，25ms 保证主流浏览器都顺畅。
+
+可以使用类似的方法来优化three.js程序。
+
+```js
+
+//Copyright 2009 Nicholas C. Zakas. All rights reserved.
+//MIT Licensed
+
+function timedChunk(items, process, context, callback){
+    
+    
+    var todo = items.concat();   
+    
+    setTimeout(function(){
+        
+        var start = +new Date();
+        
+        
+        do {
+             process.call(context, todo.shift());
+        } while (todo.length > 0 && (+new Date() - start < 50));
+
+        if (todo.length > 0){
+            setTimeout(arguments.callee, 25);
+        } else {
+            callback(items);
+        }
+    }, 25);
+};
+
+
+```
+
+程序分析见
 
 ## 使用自定义着色器
 
