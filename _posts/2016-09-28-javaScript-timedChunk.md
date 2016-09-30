@@ -11,7 +11,7 @@ author: JiuYang Chen
 {:toc}
 
 
-本篇介绍`NicholasC.Zakas`一书作者提出的大数组的分时加载算法`timedChunk`。
+本篇介绍`高性能JavaScript`一书作者`NicholasC.Zakas`提出的大数组的分时加载算法`timedChunk`。
 
 
 
