@@ -83,7 +83,7 @@
         var timed = document.getElementById("timedChunk");
         var list = document.getElementById("List");
 
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 10000; i++) {
             items.push("" + i + "");
         }
 
@@ -96,6 +96,7 @@
         function AddItem(data) {
             var Li = document.createElement('li');
             Li.innerHTML = data;
+            // 增加额外操作
             console.log(data);
             list.appendChild(Li);
         }
