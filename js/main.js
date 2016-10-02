@@ -3,10 +3,11 @@
  */
 /* jshint asi:true */
 
-/////////////////////////header////////////////////////////
 /**
  * clickMenu
  */
+
+// header
 (function() {
     if (window.innerWidth <= 770) {
         var menuBtn = document.querySelector('#headerMenu')
@@ -29,13 +30,12 @@
 }());
 
 
-//////////////////////////back to top////////////////////////////
+// back to top
+
 (function() {
     var backToTop = document.querySelector('.back-to-top')
     var backToTopA = document.querySelector('.back-to-top a')
-        // console.log(backToTop);
     window.addEventListener('scroll',function () {
-
 
         // 页面顶部滚进去的距离
         var scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
@@ -47,8 +47,4 @@
         }
     })
 
-    // backToTopA.addEventListener('click',function (e) {
-    //     e.preventDefault()
-    //     window.scrollTo(0,0)
-    // })
 }());

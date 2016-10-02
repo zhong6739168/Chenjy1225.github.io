@@ -8,21 +8,26 @@ layout: default
         <div class="label">
 
             <div class="label-card">
-                <i class="fa fa-calendar"></i>{{ page.date | date: "%F" }}
+                {{ page.date | date: "%F" }}
             </div>
-
+            
+            <div class="label-card" style="color: #f1e05a;">
+                       /
+            </div>
+                    
             <div class="label-card">
-                {% if page.author %}<i class="fa fa-user"></i>{{ page.author }}
+                {% if page.author %}{{ page.author }}
                 {% endif %}
             </div>
 
-            <div class="label-card">
-                {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+            <div class="label-card" style="color: #f1e05a;">
+                       /
             </div>
 
             <div class="label-card">
-            {% include category.html %}
+                {% if page.meta %}{{ page.meta }}  {% endif %}
             </div>
+
 
             <div class="label-card">
             {% include tag.html %}
@@ -72,8 +77,6 @@ layout: default
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">
         <div class="wrap">
-
-            <!-- Content -->
             <div class="side content">
                 <div>
                     Content
@@ -83,7 +86,6 @@ layout: default
                     <li><a href="#comments">Comments</a></li>
                 </ul>
             </div>
-            <!-- <div class="side"></div> -->
         </div>
     </div>
 </div>

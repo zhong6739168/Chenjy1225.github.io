@@ -4,6 +4,7 @@ title:  "run your blog system locally"
 date:   2016-08-06 15:00:00
 categories: ruby jekyll
 tags: ruby jekyll
+author: JiuYang Chen
 ---
 
 * content

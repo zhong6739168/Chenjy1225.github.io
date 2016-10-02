@@ -18,12 +18,11 @@ icon: th-list
                         {% if post.url %}
                         <li>
                             <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+                            {{ post.date | date:"%F" }}
                             </time>
                             <a class="title" href="{{ post.url }}">{{ post.title }}</a>
 
                             {% include category.html %}
-                            {% include tag.html %}
                         </li>
                         {% endif %}
                     {% endfor %}
@@ -34,8 +33,6 @@ icon: th-list
     <button class="anchor"><i class="fa fa-anchor"></i></button>
     <div class="right">
         <div class="wrap">
-
-            <!-- Content -->
             <div class="side content">
                 <div>
                     Content
@@ -50,8 +47,6 @@ icon: th-list
                     {% endfor %}
                 </ul>
             </div>
-            <!-- 其他div框放到这里 -->
-            <!-- <div class="side">bbbb</div> -->
         </div>
     </div>
 </div>
