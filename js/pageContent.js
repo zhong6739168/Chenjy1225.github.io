@@ -70,14 +70,12 @@ function isMaxHeight() {
  * @param  {[type]} function( [description]
  * @return {[type]}           [description]
  */
-(function() {
+/*(function() {
     if (window.innerWidth <= 770) {
         var anchorBtn = document.querySelector('.anchor')
         var rightDiv = document.querySelector('.right')
 
-        /**
-         * 监听锚点按钮
-         */
+      
         anchorBtn.onclick = function(e) {
             e.stopPropagation()
             rightDiv.classList.add('right-show')
@@ -93,7 +91,7 @@ function isMaxHeight() {
         ancherPostion(anchorBtn, rightDiv) //目录锚的位置固定
         setContentMaxHeight() //设置目录最大高度
     }
-}());
+}());*/
 
 /**
  * 目录锚的位置固定
