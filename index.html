@@ -32,13 +32,17 @@ layout: default
                     <div class="label-card">
                     {% include tag.html %}
                     </div>
+                    
+                    <div class="label-card">
+                     <a  href="{{ post.url | prepend: site.baseurl }}" class="readall">Read All</a>
+                    </div>
                 </div>
                 <div class="excerpt">
                     {{post.excerpt}}
                 </div>
-                <div class="read-all">
+                <!--<div class="read-all">
                     <a  href="{{ post.url | prepend: site.baseurl }}">Read All</a>
-                </div>
+                </div>-->
               </li>
             {% endfor %}
         </ul>
