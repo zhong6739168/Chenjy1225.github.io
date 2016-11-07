@@ -27,6 +27,8 @@ author: JiuYang Chen
 
 当然你如果会安装也可以直接安装`Steam`,在`Steam`中安装`SteamVR`
 
+* [Setup Manual](https://steamcdn-a.akamaihd.net/apps/steamvr/vr_setup.pdf) HTC Vive安装说明(英文)。
+
 ### Tips
 
 1.*据说`viveport`安装的`SteamVR`会有问题*
