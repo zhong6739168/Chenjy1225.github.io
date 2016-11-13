@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "three.js中的矩阵变换及两种旋转表达方式"
+title:  "three.js 中的矩阵变换及两种旋转表达方式"
 date:   2016-11-13 11:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL
