@@ -25,7 +25,9 @@ Maven核心自带的远程仓库，包括了绝大部分开源构件。我们可
 
 下载地址: *http://maven.apache.org/download.html*
 
- 配置环境变量: `path：` `%MAVEN_HOME%\bin;`
+ 配置环境变量 系统变量: `path：` `%MAVEN_HOME%\bin;`  `MAVEN_HOME` `G:\maven\apache-maven-3.3.9-bin\apache-maven-3.3.9` 到bin文件夹
+ 
+ cmd:mvn -version 查看安装是否成功
  
  配置中央仓库：解压安装路径下    *apache-maven-3.3.9\lib\ maven-model-builder-3.3.9.jar*
 
@@ -41,11 +43,15 @@ Maven核心自带的远程仓库，包括了绝大部分开源构件。我们可
      `Name`:m2e  
      `Location`: *http://m2eclipse.sonatype.org/sites/m2e*
   
-     
+如果一直停留pending可以将`Contact all update sites during install to find required software` 取消勾选
+  
 
 ### 新建一个Maven项目
 
     eclipse：new --> Maven --> MavenProject 
+	
+Tips:可能会卡住，因为Maven会生成项目骨架，天朝的网络下载是硬伤。`Properties`参数`archetypeCatalog=internal`
+
     
 ### 添加要下载的地址
 
@@ -100,6 +106,35 @@ Maven核心自带的远程仓库，包括了绝大部分开源构件。我们可
 ```xml
 
     <localRepository>G:/maven/repository</localRepository>
+
+```
+
+### 下载Tips
+
+下载`json-lib`
+
+```xml
+
+<!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+<dependency>
+    <groupId>net.sf.json-lib</groupId>
+    <artifactId>json-lib</artifactId>
+    <version>2.2.2</version>
+</dependency>
+
+```
+
+无法下载 要改成
+
+```xml
+
+<!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+<dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.2.2</version>
+            <classifier>jdk15</classifier>
+</dependency>
 
 ```
 

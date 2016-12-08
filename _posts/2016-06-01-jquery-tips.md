@@ -16,7 +16,8 @@ author: JiuYang Chen
 
 ## Tips About Jquery.
 
-1.1 `Jquery`动态绑定事件
+### `Jquery`动态绑定事件
+
 
 ```js
 
@@ -34,7 +35,7 @@ $(document).on('click','.div',function(){});
 
 ```
 
-2.2 `Jquery` `on`绑定`hover`事件
+### `Jquery` `on`绑定`hover`事件
 
 不能用`on`处理`hover`事件，因为`Jquery`的`hover`事件是一个封装的事件，不是真正的事件。
 
@@ -51,7 +52,7 @@ $(document).on('mouseleave', '.div', function() {
 
 ```
 
-3.3 `Jquery`获取时间并且格式化
+### `Jquery`获取时间并且格式化
 
 ```js
 
@@ -88,7 +89,7 @@ var endTime = new Date().format("yyyy-MM-dd hh:mm:ss");
 
 ```
 
-4.4 滚动条滚动底部
+### 滚动条滚动底部
 
 * `scrollTop([val])` 获取匹配元素相对滚动条顶部的偏移。
 
@@ -103,6 +104,25 @@ $(".div").scrollTop( $(".div")[0].scrollHeight);
 
 ```
 
-5.5 `Jquery` `size( )`和`length`
+### `Jquery` `size( )`和`length`
 
 `size()`是`jQuery` 提供的函数，而 `length`是属性。两者的取值是一样的。
+
+### 页面之间传值
+
+```js
+
+   //页面一
+   location.href = "href2.html?id=3";
+
+```
+
+```js   
+   //页面二
+   var _url = document.URL;
+   var _urlParam = _url.split('?')[1];
+   var _value = _urlParam.split('=')[1];
+
+```
+ 
+ 也可以使用`jquery.params.js` `$.query.get("id");`
