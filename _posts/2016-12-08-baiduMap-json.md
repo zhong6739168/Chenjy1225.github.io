@@ -22,7 +22,9 @@ Geocoding API 是一类接口，用于提供从地址到经纬度坐标或者从
 
 简单的说就是通过向`http://api.map.baidu.com/geocoder/v2/`发送一个`HTTP/HTTPS`请求然后获取返回的数据。
 
-请求示例：`http://api.map.baidu.com/geocoder/v2/?callback=renderReverse&location=39.915,116.404&output=json&pois=1&ak=你的ak密钥`  
+请求示例：
+
+`http://api.map.baidu.com/geocoder/v2/?callback=renderReverse&location=39.915,116.404&output=json&pois=1&ak=你的ak密钥`  
 
 Tips:ak密钥需要登录百度账号申请。
 
@@ -104,10 +106,7 @@ public class BaiduMapRequset {
 output:
 
 ```java
-
-
 北京市
-
 ```
 
 由于返回的值为`Gson`:renderReverse&&renderReverse({"status":0, ...... "cityCode":131}}),所以需要简单的解析一下。
