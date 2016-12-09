@@ -51,9 +51,9 @@ return a NodeList containing all of the matching Element nodes within the node�
 ```js
     
     // 选取`class`类名为`test`的子元素中第一个为`p`的元素
-    document.querySelector("div.test>p:first-child");
+    document.querySelector("div.test>ul:first-child");
     
-    document.querySelectorAll("div.test>p:first-child")[0];
+    document.querySelectorAll("div.test>ul:first-child")[0];
 
 
 ```
