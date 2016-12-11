@@ -126,3 +126,138 @@ $(".div").scrollTop( $(".div")[0].scrollHeight);
 ```
  
  也可以使用`jquery.params.js` `$.query.get("id");`
+ 
+ ### 灵活运用三目运算符
+ 
+ ```js   
+ 
+ (_list.equipStatus ==1?"运行中":(_list.repairStatus ==2?"维修中":"待确认"))
+ 
+ ```
+### 正确引用jQuery
+
+1.	尽量在`body`结束前才引入`jQuery`，而不是在`head`中。
+2.	借助第三方提供的CDN来引入jQuery，同时注意当使用第三方CDN出现问题时，要引入本地的`jQuery`文件。
+3.	<u>如果在`</body>`前引入`script`文件的话，就不用写`document.ready`了</u>，因为这时执行`js`代码时`DOM`已经加载完毕了。
+
+```js   
+
+<body>  
+    <script src="http://lib.sinaapp.com/js/jquery11/1.8/jquery.min.js"></script>  
+    <script>window.jQuery  document.write('<script src="jquery1.8.min.js">\x3C/script>')</script>  
+</body> 
+
+```
+
+### 优化jQuery选择器
+
+```js   
+
+<div id="nav" class="nav">  
+    <a class="home" href="http://www.jquery001.com">jQuery学习网</a>  
+    <a class="articles" href="http://www.jquery001.com/articles/">jQuery教程</a>  
+</div>
+
+```
+
+如果我们选择class为home的a元素时，可以使用下边代码：
+
+$('.home');  //1  
+
+$('#nav a.home');  //2  
+
+$('#nav').find('a.home');  //3 
+
+1.	方法1，会使jQuery在整个DOM中查找class为home的a元素，性能可想而知。
+2.	方法2，为要查找的元素添加了上下文，在这里变为查找id为nav的子元素，查找性能得到了很大提升。
+3.	方法3，使用了find方法，它的速度更快，所以方法三最好。
+
+关于jQuery选择器的性能优先级，ID选择器快于元素选择器，元素选择器快于class选择器。因为ID选择器和元素选择器是原生的`JavaScript`操作，而类选择器不是。
+
+
+### 缓存jQuery对象
+
+缓存jQuery对象可以减少不必要的DOM查找，关于这点大家可以参考下缓存jQuery对象来提高性能。
+
+```js  
+
+// 糟糕
+h = $('#element').height();
+$('#element').css('height',h-20);
+
+// 建议
+$element = $('#element');
+h = $element.height();
+$element.css('height',h-20);
+
+```
+
+####  使用子查询缓存的父元素
+正如前面所提到的，DOM遍历是一项昂贵的操作。典型做法是缓存父元素并在选择子元素时重用这些缓存元素。
+
+```js  
+
+// 糟糕
+var
+    $container = $('#container'),
+    $containerLi = $('#container li'),
+    $containerLiSpan = $('#container li span');
+// 建议 (高效)
+var
+    $container = $('#container '),
+    $containerLi = $container.find('li'),
+    $containerLiSpan= $containerLi.find('span');
+
+```
+
+### 精简jQuery代码
+
+一般来说,最好尽可能合并函数。
+
+```js  
+
+// 糟糕
+$first.click(function(){
+    $first.css('border','1px solid red');
+    $first.css('color','blue');
+});
+// 建议
+$first.on('click',function(){
+    $first.css({
+        'border':'1px solid red',
+        'color':'blue'
+    });
+});
+
+```
+
+### 减少DOM操作
+
+#### 最小化DOM更新
+
+重布局和重绘是WEB页面中最常见的也是最昂贵的两种操作。
+当改变样式，而不改变页面几何布局时，将会发生重绘。隐藏一个元素或者改变一个元素的背景色时都将导致一次重绘。
+当对页面结构进行更新时，将导致页面重布局。
+
+```js  
+
+	//糟糕
+	for(var i=0; i<10000; i++){
+	$("#main table").append("<tr><td>aaaa</td></tr>");
+	}
+	//建议
+	var tablerow = "";
+	for(var i=0; i<10000; i++){
+	tablerow  += "<tr><td>aaaa</td></tr>";
+	}
+$("#main table").append(tablerow);
+
+```
+
+
+
+
+
+
+
+
