@@ -110,3 +110,5 @@ output:
 ```
 
 由于返回的值为`Gson`:renderReverse&&renderReverse({"status":0, ...... "cityCode":131}}),所以需要简单的解析一下。
+
+[源代码](http://ww3.sinaimg.cn/mw690/c584f169gw1famyufb3ibj20eu02o747.jpg)
