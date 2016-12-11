@@ -371,4 +371,4 @@ public static final User dao = new User();
 ```
 
 
-[源代码](http://ww3.sinaimg.cn/mw690/c584f169gw1famyufb3ibj20eu02o747.jpg)
+[源代码](https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/JFinal_demo)
