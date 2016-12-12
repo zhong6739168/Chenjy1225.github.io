@@ -129,11 +129,12 @@ $(".div").scrollTop( $(".div")[0].scrollHeight);
  
  ### 灵活运用三目运算符
  
- ```js   
+```js   
  
  (_list.equipStatus ==1?"运行中":(_list.repairStatus ==2?"维修中":"待确认"))
  
- ```
+```
+
 ### 正确引用jQuery
 
 1.	尽量在`body`结束前才引入`jQuery`，而不是在`head`中。
