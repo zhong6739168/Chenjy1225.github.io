@@ -255,6 +255,25 @@ $("#main table").append(tablerow);
 
 ```
 
+### prop和attr方法
+
+对于元素自身的固有属性 使用 prop 对于自定义的属性使用attr方法
+
+例：获取选中的checkbox的value值
+
+```js  
+
+$("input[type=checkbox]").each(function() {
+
+					if(true == $(this).prop("checked")) {
+					
+						alert($(this).attr("value"));
+						
+					}
+				});
+
+```
+
 
 
 
