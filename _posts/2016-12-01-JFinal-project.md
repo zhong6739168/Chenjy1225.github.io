@@ -42,7 +42,7 @@ author: JiuYang Chen
 
  修改 <u>web.xml</u>： 
  
- ```xml
+```xml
  
 <filter>
 	<filter-name>jfinal</filter-name>
@@ -61,7 +61,7 @@ author: JiuYang Chen
 
 添加<u>DemoConfig</u>：
 
- ```java
+```java
  
 package config;
 
@@ -94,11 +94,11 @@ public class DemoConfig extends JFinalConfig {
 }
 
 
- ```
+```
 
 添加<u>HelloController</u>：
 
- ```java
+```java
 
 package controller;
 
@@ -109,7 +109,7 @@ public class HelloController extends Controller {
 	}
 }
 
- ```
+```
 
 `Run As --> Run configurations`
 
@@ -122,7 +122,7 @@ public class HelloController extends Controller {
 
 修改<u>DemoConfig</u>：
 
- ```java
+```java
 
 //加载datasource.properties 数据库配置
 
@@ -147,20 +147,19 @@ public class HelloController extends Controller {
 	public static void main(String[] args) throws Exception {
 		JFinal.start("WebRoot", 8088, "/Demo", 5);
 	}
-
 	
- ```
+```
 
 添加<u>datasource.properties<u>：
 
- ```xml
+```xml
  
 jdbcUrl = jdbc:mysql://121.40.78.44/zhitong_test?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
 user = root
 password =Ne0Print1202
 devMode = true
 	
- ```
+```
  	
 ### 简单的增删查改功能
 
@@ -170,7 +169,7 @@ devMode = true
 
 `hello/addUser`、`hello/deleteUser`、`hello/findUser`和`hello/updateUser`分别对应着`HelloController`的四个方法
 
- ```html
+```html
 
 <!DOCTYPE html>
 <html>
