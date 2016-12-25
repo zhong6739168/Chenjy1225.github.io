@@ -166,7 +166,7 @@ author: JiuYang Chen
 
 ### 身份证号
  
- ```js
+```js
  
     var regExp=/\d{17}[\d|x]|\d{15}/;
 	
