@@ -55,6 +55,8 @@ author: JiuYang Chen
 
 ```
 
+JSONObject：
+
 ```java
      
      //将传入的`JSON`文本解析成了`JSONObject`
@@ -67,3 +69,55 @@ author: JiuYang Chen
     
     output: {"robot1":"ws1","robot2":"ws2","robot3":"ws3"}
 ```
+
+JSONArray：
+
+```java
+     
+     //将传入的`JSON`文本解析成了`JSONArray`
+     String str ="[{'hardwareCount':2,'hardwareType':1},{'hardwareCount':1,'hardwareType':2},{'hardwareCount':1,'hardwareType':3},{'hardwareCount':1,'hardwareType':4}]";
+	 JSONArray array = JSON.parseArray(str);
+	 
+	 Iterator<Object> it = array.iterator();
+		while (it.hasNext()) {
+		JSONObject object = (JSONObject) it.next();
+		System.out.println(object);
+		}
+		
+	output：	{"hardwareCount":2,"hardwareType":1}
+				{"hardwareCount":1,"hardwareType":2}
+				{"hardwareCount":1,"hardwareType":3}
+				{"hardwareCount":1,"hardwareType":4}
+	 
+```	
+
+### 迭代器
+
+迭代器（Iterator）是一种设计模式，它是一个对象，它可以遍历并选择序列中的对象。
+
+`Iterator`:是Java迭代器最简单的实现。
+
+`function:`
+
+1.1 next() :获取下一个迭代器元素
+
+2.2 hasNext() :检查序列是否还有元素
+
+3.3 remove() :将迭代器当前元素删除
+
+
+`ListIterator`:针对List的迭代器
+
+添加了`previous()`等方法，可以双向移动。
+
+
+
+
+
+
+
+
+
+
+
+
