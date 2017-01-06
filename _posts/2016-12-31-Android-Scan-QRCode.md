@@ -66,7 +66,9 @@ int newDiff=Math.abs(newY - screenResolution.x) + Math.abs(newX - screenResoluti
 
 3.3 距离太近扫不出二维码
 
-`mining.app.zxing.camera` 包里面的`CameraConfigurationManager.java`,`setDesiredCameraParameters`方法替换为
+`mining.app.zxing.camera`
+
+包里面的`CameraConfigurationManager.java`,`setDesiredCameraParameters`方法替换为
 
 ```java
 
@@ -103,5 +105,5 @@ camera.setParameters(parameters);
 ![outPut](http://ww3.sinaimg.cn/mw690/c584f169gw1fbgw0j63ogj20920fg0sm.jpg)
 
 
-![outPut](http://ww2.sinaimg.cn/mw690/c584f169gw1fbgw0jkuusj20kz0zkjsp.jpg)
+![outPut](http://ww3.sinaimg.cn/mw690/c584f169gw1fbgwdyj7g5j20920fcdga.jpg)
 

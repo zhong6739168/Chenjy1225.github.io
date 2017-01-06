@@ -26,7 +26,7 @@ author: JiuYang Chen
 
 ### `Google-chart`格式
 
-[https://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=L|4&chl=chenjy1225](https://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=L|4&chl=chenjy1225)
+`https://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=L|4&chl=chenjy1225`
 
 结构：
 
