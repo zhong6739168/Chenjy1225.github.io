@@ -18,15 +18,16 @@ author: JiuYang Chen
 
 ### 父页面和子页面传值
 
-1. 访问父页面值
+1.1 访问父页面值
 
 ```js  
 
+// "id" 父页面元素
 var parentId=parent.$("#id").val();
 
 ```
 
-2. 访问父页面方法
+2.2 访问父页面方法
 
 ```js  
 
@@ -34,7 +35,17 @@ var parentMethod=parent.getMethod();
 
 ```
 
-3. 关闭弹出的子页面窗口
+3.3 给父页面传值
+
+```js  
+
+    // "id" 父页面元素
+    parent.$('#id').text('');
+	
+
+```
+
+4.4 关闭弹出的子页面窗口
 
 ```js  
 
@@ -48,7 +59,7 @@ parent.layer.close(index);
 
 ```
 
-4. 子页面调用父页面刷新
+5.5 子页面调用父页面刷新
 
 ```js  
 

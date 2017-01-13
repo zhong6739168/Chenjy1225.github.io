@@ -263,7 +263,7 @@ $("#main table").append(tablerow);
 
 ```js  
 
-$("input[type=checkbox]").each(function() {
+	$("input[type=checkbox]").each(function() {
 
 					if(true == $(this).prop("checked")) {
 					
@@ -274,7 +274,29 @@ $("input[type=checkbox]").each(function() {
 
 ```
 
+### each遍历
 
+用`each`实现全选或是取消全选。
+
+```js  
+
+	$("#selectAll").click(function() {
+	
+				if($("#selectAll").prop("checked")) {
+					$("#selectAll input[type=checkbox]").each(function() {
+						$(this).prop("checked", "true");
+					});
+					
+				} else {
+				
+					$("#selectAll input[type=checkbox]").each(function() {
+						$(this).removeAttr("checked");
+					});
+				}
+			});
+
+
+```
 
 
 

@@ -26,11 +26,16 @@ icon: bookmark
 
   CSS3 生成器
 
-* [图床 https://sm.ms/](https://sm.ms/)
+* [图床] (https://sm.ms/](https://sm.ms/)
 
     有 API 可用。
 
 * [Unix 时间戳 Unix timestamp](http://tool.chinaz.com/Tools/unixtime.aspx)
+
+* [css usage] (https://addons.mozilla.org/en-US/firefox/addon/css-usage/)
+
+    css 瘦身工具 
+	
 
 ## 编程语言
 
@@ -86,6 +91,9 @@ icon: bookmark
 * [Troubleshooting](https://developer.valvesoftware.com/wiki/SteamVR/Troubleshooting) 问题排除指南。
 * [VR应用设计的8个建议](http://geek.csdn.net/news/detail/110018)
 
+## AI
+
+* [baidu.Ai](https://ai.baidu.com/) 让Ai发生变革发生，百度大脑全新开放。
 
 ## Comments
 

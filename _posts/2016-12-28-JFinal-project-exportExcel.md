@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jfinal 导出Excel"
+title:  "Jfinal 导出Excel（1）"
 date:   2016-12-18 19:00:00 +0800
 categories: Java
 tags: Java JFinal
@@ -254,6 +254,23 @@ public class ExportExcelService {
 ```java
 
 		me.add("/excel", ExportExcelController.class);
+
+```
+
+调用方法：
+
+
+```js
+
+$("#export").click(function(){
+    	
+    	$.post("excel/exportOutExcel",{sheetName:"报表"},function(data){
+    		
+    		var relativePath = data.relativePath;
+			window.location.href = ".." + relativePath;
+    		
+    	});
+    });
 
 ```
 
