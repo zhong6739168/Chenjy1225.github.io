@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Unity3D 实例化对象"
+title:  "Unity3d 实例化对象"
 date:   2016-08-30 20:00:00 +0800
-categories: Unity3D
-tags: Unity3D C#
+categories: Unity3d
+tags: Unity3d C#
 author: JiuYang Chen
 ---
 
