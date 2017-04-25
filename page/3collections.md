@@ -35,7 +35,8 @@ icon: bookmark
 * [css usage] (https://addons.mozilla.org/en-US/firefox/addon/css-usage/)
 
     css 瘦身工具 
-	
+
+* [Chrome 开发者工具](http://www.cocoachina.com/webapp/20151118/14278.html)	
 
 ## 编程语言
 
