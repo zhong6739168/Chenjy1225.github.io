@@ -96,6 +96,12 @@ icon: bookmark
 
 * [baidu.Ai](https://ai.baidu.com/) 让Ai发生变革发生，百度大脑全新开放。
 
+## Android
+
+* [网易云捕](http://crash.163.com/) 国内访问流畅无压力,有警报和日志。
+
+* [App 性能测试](http://mtc.baidu.com/academy/detail/article/152)流量、电量、弱网环境下的Android app 测试。
+
 ## Comments
 
 {% include comments.html %}
