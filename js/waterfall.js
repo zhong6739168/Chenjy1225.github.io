@@ -46,6 +46,26 @@
         title: '基准坐标标识器',
         core_tech: 'three.js',
         description: '使用three.js制作的基准坐标标识器'
+    },{
+        demo_link: 'http://wx2.sinaimg.cn/large/c584f169ly1ffm78cbyb1g20qo0f47wt.gif',
+        img_link: 'http://wx2.sinaimg.cn/large/c584f169ly1ffm78cbyb1g20qo0f47wt.gif',
+        title: 'MooBot障碍检测',
+        core_tech: 'Android'
+    },{
+        demo_link: 'http://wx4.sinaimg.cn/large/c584f169ly1ffm8e35y9ng20qo0f4b2r.gif',
+        img_link: 'http://wx4.sinaimg.cn/large/c584f169ly1ffm8e35y9ng20qo0f4b2r.gif',
+        title: 'MooBot手机遥控',
+        core_tech: 'Android ZMQ'
+    },{
+        demo_link: 'http://wx1.sinaimg.cn/large/c584f169ly1ffm8d7zvtkg20qo0f4he6.gif',
+        img_link: 'http://wx1.sinaimg.cn/large/c584f169ly1ffm8d7zvtkg20qo0f4he6.gif',
+        title: 'MooBot网络遥控',
+        core_tech: 'Android WebSocket'
+    },{
+        demo_link: 'http://wx4.sinaimg.cn/mw690/c584f169ly1ffm809i9ilg20f40qoqvj.gif',
+        img_link: 'http://wx4.sinaimg.cn/mw690/c584f169ly1ffm809i9ilg20f40qoqvj.gif',
+        title: 'MooBot手柄遥控',
+        core_tech: 'Android USB'
     }];
 
     contentInit(demoContent) //内容初始化
