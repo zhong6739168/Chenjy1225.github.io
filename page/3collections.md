@@ -102,6 +102,10 @@ icon: bookmark
 
 * [App 性能测试](http://mtc.baidu.com/academy/detail/article/152)流量、电量、弱网环境下的Android app 测试。
 
+## Java
+
+* [代码片段](https://git.oschina.net/gists) useful
+
 ## Comments
 
 {% include comments.html %}

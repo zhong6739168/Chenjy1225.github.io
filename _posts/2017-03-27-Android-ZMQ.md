@@ -148,6 +148,88 @@ public class hwserver {
 ![outPut](http://wx3.sinaimg.cn/mw690/c584f169ly1fe3iuuozo8j20bi06emx6.jpg)
 
 
+## 发布-订阅模式实例 （JAVA）
+
+**Client:**
+
+```java
+
+import org.zeromq.ZMQ;
+
+public class hwclient {
+
+    public static void client() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ZMQ.Context zContext = ZMQ.context(1);
+                ZMQ.Socket socket = zContext.socket(ZMQ.SUB);
+                socket.connect("tcp://" + "127.0.0.1" + ":5553");
+                socket.subscribe("Hello World!".getBytes());
+                while(true){
+                    System.out.println("client:"+new String(socket.recv(0)));
+                }
+					
+                //socket.close();
+            }
+        }).start();
+    }
+
+
+    public static void  main(String args[]){
+        client();
+    }
+}
+
+```
+
+**Server:**
+
+```java
+
+import org.zeromq.ZMQ;
+
+public class hwserver {
+
+     private static void server() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ZMQ.Context zContext = ZMQ.context(1);
+                ZMQ.Socket publisher = zContext.socket(ZMQ.PUB);
+                publisher.bind("tcp://*:5553");
+					while (!Thread.currentThread().isInterrupted()) {
+                        try {
+
+                            Thread.currentThread().sleep(1000);
+                            String reply = "Hello World!";
+                            System.out.println("server:"+reply);
+                            publisher.send(reply.getBytes(), 0);
+
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+					}
+                /*publisher.close ();
+                zContext.term ();*/
+
+            }
+        }).start();
+
+    }
+
+    public static void  main(String args[]){
+        server();
+    }
+}
+
+```
+
+**Client:**
+
+![outPut](http://wx3.sinaimg.cn/mw690/c584f169ly1ffxfzivjsgj20cj06jwel.jpg)
+
 
 > more in [ZMQ](http://zguide.zeromq.org/)
 
