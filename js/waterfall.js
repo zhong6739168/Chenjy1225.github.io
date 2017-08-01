@@ -67,18 +67,18 @@
         title: 'MooBot手柄遥控',
         core_tech: 'Android USB'
     },{
-        demo_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135917731334494/album_id/3841441519509902',
-        img_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135917731334494/album_id/3841441519509902',
+        demo_link: 'http://wx3.sinaimg.cn/large/c584f169ly1fi44p96iudg20qo0f4b2r.gif',
+        img_link: 'http://wx3.sinaimg.cn/large/c584f169ly1fi44p96iudg20qo0f4b2r.gif',
         title: '物流AGV控制单机版',
         core_tech: 'Android AGV'
     },{
-        demo_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135921799823960/album_id/3841441519509902',
-        img_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135921799823960/album_id/3841441519509902',
+        demo_link: 'http://wx3.sinaimg.cn/large/c584f169ly1fi45628dhyg20f40qo1ld.gif',
+        img_link: 'http://wx3.sinaimg.cn/large/c584f169ly1fi45628dhyg20f40qo1ld.gif',
         title: '物流AGV控制驶入充电桩',
         core_tech: 'Android AGV'
     },{
-        demo_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135924089908251/album_id/3841441519509902',
-        img_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135924089908251/album_id/3841441519509902',
+        demo_link: 'http://wx4.sinaimg.cn/large/c584f169ly1fi45fjj4z4g20qo0f4npt.gif',
+        img_link: 'http://wx4.sinaimg.cn/large/c584f169ly1fi45fjj4z4g20qo0f4npt.gif',
         title: '物流AGV 交通调度管理平台',
         core_tech: 'Android AGV'
     }];
