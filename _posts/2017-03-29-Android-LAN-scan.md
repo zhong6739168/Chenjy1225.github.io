@@ -813,7 +813,9 @@ public abstract class SearcherDevice extends Thread {
 
 ```
 
+### 备注 
 
+* `2017/06/26` 路由器 需要开启`SSID` 广播来支持，`UDP` 广播。
 
 
 

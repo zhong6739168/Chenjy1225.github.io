@@ -38,6 +38,8 @@ icon: bookmark
 
 * [Chrome 开发者工具](http://www.cocoachina.com/webapp/20151118/14278.html)	
 
+* [思维导图工具](https://coggle.it/)
+
 ## 编程语言
 
 ### JavaScript
@@ -102,9 +104,15 @@ icon: bookmark
 
 * [App 性能测试](http://mtc.baidu.com/academy/detail/article/152)流量、电量、弱网环境下的Android app 测试。
 
+* [stl 模型预览](https://github.com/zhe8300975/STLShowView) from github
+
+* [常用的工具类](https://github.com/l123456789jy/Lazy) from github
+
 ## Java
 
 * [代码片段](https://git.oschina.net/gists) useful
+
+* [阿里巴巴java开发手册](https://zhuanlan.zhihu.com/p/25157253)
 
 ## Comments
 

@@ -66,6 +66,21 @@
         img_link: 'http://wx4.sinaimg.cn/mw690/c584f169ly1ffm809i9ilg20f40qoqvj.gif',
         title: 'MooBot手柄遥控',
         core_tech: 'Android USB'
+    },{
+        demo_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135917731334494/album_id/3841441519509902',
+        img_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135917731334494/album_id/3841441519509902',
+        title: '物流AGV控制单机版',
+        core_tech: 'Android AGV'
+    },{
+        demo_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135921799823960/album_id/3841441519509902',
+        img_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135921799823960/album_id/3841441519509902',
+        title: '物流AGV控制驶入充电桩',
+        core_tech: 'Android AGV'
+    },{
+        demo_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135924089908251/album_id/3841441519509902',
+        img_link: 'http://photo.weibo.com/3313824105/photos/large/photo_id/4135924089908251/album_id/3841441519509902',
+        title: '物流AGV 交通调度管理平台',
+        core_tech: 'Android AGV'
     }];
 
     contentInit(demoContent) //内容初始化

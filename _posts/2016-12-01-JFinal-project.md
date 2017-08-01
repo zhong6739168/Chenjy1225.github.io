@@ -49,7 +49,7 @@ author: JiuYang Chen
 	<filter-class>com.jfinal.core.JFinalFilter</filter-class>
 	<init-param>
 		<param-name>configClass</param-name>
-		<param-value>demo.DemoConfig</param-value>
+		<param-value>config.DemoConfig</param-value>
 	</init-param>
 </filter>
 <filter-mapping>

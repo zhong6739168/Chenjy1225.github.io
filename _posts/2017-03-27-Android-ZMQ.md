@@ -231,5 +231,7 @@ public class hwserver {
 ![outPut](http://wx3.sinaimg.cn/mw690/c584f169ly1ffxfzivjsgj20cj06jwel.jpg)
 
 
+
 > more in [ZMQ](http://zguide.zeromq.org/)
 
+> more in other blog [云风](http://blog.codingnow.com/2011/02/zeromq_message_patterns.html)
