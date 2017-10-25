@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "java 并发库之`Semaphore`"
+title:  "java 并发库之 Semaphore"
 date:   2017-05-07 20:00:00 +0800
 categories: Java 
 tags: Java

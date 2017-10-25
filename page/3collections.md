@@ -108,11 +108,15 @@ icon: bookmark
 
 * [常用的工具类](https://github.com/l123456789jy/Lazy) from github
 
+* [阿里规约插件](http://www.cnblogs.com/plokmju/p/7670481.html#3814371)
+
 ## Java
 
 * [代码片段](https://git.oschina.net/gists) useful
 
 * [阿里巴巴java开发手册](https://zhuanlan.zhihu.com/p/25157253)
+
+* [ThreadPoolExecutor机制](http://825635381.iteye.com/blog/2184680)
 
 ## Comments
 

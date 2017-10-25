@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "java 并发库之`Executors`"
+title:  "java 并发库之 Executors"
 date:   2017-05-08 20:00:00 +0800
 categories: Java 
 tags: Java
@@ -17,6 +17,32 @@ author: JiuYang Chen
 
 
 本篇简单介绍`java`并发库的`Executors`概念。
+
+## `new Thread弊端`
+
+```java
+
+new Thread(new Runnable() {
+ 
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+	}
+}).start();
+
+```
+
+`new Thread` 的弊端如下：
+
+* a. 每次new Thread新建对象性能差
+* b. 线程缺乏统一管理，可能无限制新建线程，相互之间竞争，及可能占用过多系统资源导致死机或oom
+* c. 缺乏更多功能，如定时执行、定期执行、线程中断
+
+相比`new Thread`，`Java`提供的四种线程池的好处在于：
+
+* a. 重用存在的线程，减少对象创建、消亡的开销，性能佳。
+* b. 可有效控制最大并发线程数，提高系统资源的使用率，同时避免过多资源竞争，避免堵塞。
+* c. 提供定时执行、定期执行、单线程、并发数控制等功能。
 
 ## `Executors`
 
@@ -89,10 +115,19 @@ public class MyExecutor extends Thread {
 计算完成之后只能通过,`Future future.get()` 来获取结果。
 
 
+## `2017/10/24 ` `update`
 
+** 阿里编码规范 告诉我们 **
 
+```java
 
+ExecutorService service2 = Executors.newSingleThreadExecutor();  
 
+```
+
+![outPut](http://wx4.sinaimg.cn/mw690/c584f169ly1fkt4ee84cyj20n20px0uq.jpg)
+
+//todo chenjy 
 
 
 

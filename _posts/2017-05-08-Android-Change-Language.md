@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "`Android` `App` 切换语言"
+title:  "Android App 切换语言"
 date:   2017-05-08 20:00:00 +0800
 categories: Android  
 tags: Android
