@@ -117,7 +117,7 @@ public class MyExecutor extends Thread {
 
 ## `2017/10/24 ` `update`
 
-** 阿里编码规范 告诉我们 **
+> 阿里编码规范 告诉我们
 
 ```java
 
@@ -127,7 +127,27 @@ ExecutorService service2 = Executors.newSingleThreadExecutor();
 
 ![outPut](http://wx4.sinaimg.cn/mw690/c584f169ly1fkt4ee84cyj20n20px0uq.jpg)
 
-//todo chenjy 
+
+所以要改成[ThreadPoolExecutor](https://chenjy1225.github.io/2017/08/23/java-ThreadPoolExecutor/) 线程池这种形式。
+
+```java
+
+//如
+
+ExecutorService service2 = Executors.newSingleThreadExecutor();  
+
+//改为
+
+ExecutorService service2 = new ThreadPoolExecutor(1, 1,0L, TimeUnit.MILLISECONDS,new LinkedBlockingQueue<Runnable>()));  
+
+//或是
+
+ThreadFactory factory = new ThreadFactoryBuilder().setNameFormat("thread-pool-%d").build();
+ExecutorService service2 = new ThreadPoolExecutor(1,1,0L, TimeUnit.MILLISECONDS,new LinkedBlockingDeque<Runnable>(),factory);
+
+```
+
+
 
 
 
