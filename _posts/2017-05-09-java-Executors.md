@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "java 并发库之 Executors"
-date:   2017-05-08 20:00:00 +0800
+date:   2017-05-09 20:00:00 +0800
 categories: Java 
 tags: Java
 author: JiuYang Chen
@@ -117,7 +117,7 @@ public class MyExecutor extends Thread {
 
 ## `2017/10/24 ` `update`
 
-> 阿里编码规范 告诉我们
+> `阿里编码规范` 告诉我们
 
 ```java
 

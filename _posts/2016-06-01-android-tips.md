@@ -100,4 +100,36 @@ public class AutoSaleTicket  implements Runnable {
 ### `finished with non-zero exit value 2`
 
 重复的`jar`包,删除引用的包，同时删除`module`的`build.gradle`文件的引用。
+
+### `border`
+
+```java
+
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00000000"/>
+    <stroke android:width="1dp" android:color="#000000"/>
+    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp" />
+</shape>
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
