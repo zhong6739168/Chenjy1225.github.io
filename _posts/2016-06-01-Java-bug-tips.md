@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java Bug 汇总"
+title:  "Java tips"
 date:   2016-06-01 20:00:00 +0800
 categories: Java
 tags: Java
@@ -13,7 +13,7 @@ author: JiuYang Chen
 
 
 
-## Java Bug 汇总
+## Java tips
 
 ### `javax.servlet.ServletContext`
 
@@ -29,8 +29,13 @@ BUG :`Jfinal Db.findFirst` `java.lang.Long cannot be cast to java.lang.Integer`
 Solution:`return Db.findFirst(sql).getLong("count").intValue();`
 	
 	
-	
-	
+### `错误: 编码GBK的不可映射字符`
+
+BUG : eclipse导出javadoc时的`错误: 编码GBK的不可映射字符`	
+
+Solution：-encoding UTF-8 -charset UTF-8
+
+![solution](http://wx2.sinaimg.cn/large/c584f169gy1fnkw18fb5bj20h40gwjrx.jpg)	
 	
 	
 	

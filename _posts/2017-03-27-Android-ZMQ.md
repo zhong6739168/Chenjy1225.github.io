@@ -235,3 +235,27 @@ public class hwserver {
 > more in [ZMQ](http://zguide.zeromq.org/)
 
 > more in other blog [云风](http://blog.codingnow.com/2011/02/zeromq_message_patterns.html)
+
+## `2017/11/22 ` `update`
+
+>org.zeromq.ZMQException: Operation cannot be accomplished in current state
+
+ZMQ不可以线程之间共享Socket
+
+## `2018/01/18` `update`
+
+>UnsatisfiedLinkError
+
+网上下载的zmq.jar中，缺少了`arm64-v8a`的`libjzmq.so`文件，在使用`arm64-v8a`架构手机的时候会出现此问题。
+
+解决方案：
+
+1.可以使用网上的源码替代之。
+
+[zmq通讯包 github](https://github.com/zeromq/jeromq.git)
+
+缺少jnacl.jar自行下载。
+
+2.也可以自己编译 `arm64-v8a` `libjzmq.so`文件。
+
+

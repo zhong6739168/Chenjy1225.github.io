@@ -110,6 +110,8 @@ icon: bookmark
 
 * [阿里规约插件](http://www.cnblogs.com/plokmju/p/7670481.html#3814371)
 
+* [Android 调试工具Apk](http://trinea.cn/app/dev-tools.apk)
+
 ## Java
 
 * [代码片段](https://git.oschina.net/gists) useful
