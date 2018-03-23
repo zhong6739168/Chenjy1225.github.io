@@ -4,7 +4,7 @@ title:  "three.js-drawLine"
 date:   2016-08-11 12:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

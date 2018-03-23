@@ -4,11 +4,15 @@ title:  "Java equals 和 =="
 date:   2016-07-20 22:00:00 +0800
 categories: Java
 tags: Java 
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content
 {:toc}
+
+本篇简单介绍`java` 中 `equals` 和 `==` 区别
+
+
 
 
 
@@ -18,10 +22,10 @@ author: JiuYang Chen
 ### `==` 
 
 * 基本数据类型 byte,short,char,int,long,float,double,boolean
-`==`比较的是它们的值
+  `==`比较的是它们的值
 
 * 复合数据类型（类）
-`==`比较的是它们的在内存中的存放位置
+  `==`比较的是它们的在内存中的存放位置
 
 
 ### `equals`

@@ -4,7 +4,7 @@ title:  "大数组分时加载算法 timedChunk"
 date:   2016-09-28 20:00:00 +0800
 categories: JavaScript
 tags: JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

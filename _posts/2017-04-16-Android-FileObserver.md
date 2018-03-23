@@ -4,7 +4,7 @@ title:  "Android 监听文件夹"
 date:   2017-04-16 14:00:00 +0800
 categories: Android 
 tags: Android
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,11 +12,13 @@ author: JiuYang Chen
 * content
 {:toc}
 
-
-
+在一次`Android`和`pc`端的通讯过程中，我们放弃了`adb forward`来实现`socket`通讯。而是使用`adb push`文件，我监听文件夹... 都学习一下很有必要
 
 
 本篇简单`Android`监听文件夹的方式`FileObserver`。
+
+
+
 
 ## `FileObserver`简介
 

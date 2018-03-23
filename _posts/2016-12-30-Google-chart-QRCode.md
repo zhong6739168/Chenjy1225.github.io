@@ -4,7 +4,7 @@ title:  "Google-chart 生成二维码（1）"
 date:   2016-12-30 19:00:00 +0800
 categories: Java
 tags: Java 
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

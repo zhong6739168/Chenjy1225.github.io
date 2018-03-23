@@ -4,7 +4,7 @@ title:  "Android 串口通信"
 date:   2017-04-02 12:00:00 +0800
 categories: Android 
 tags: Android
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -13,6 +13,7 @@ author: JiuYang Chen
 {:toc}
 
 
+作为一款基于`Android` 的工控主板，很多时候网络通讯是不够的。万一客户机械臂只能提供串口呢？
 
 
 

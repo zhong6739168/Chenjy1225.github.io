@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Java HashMap"
-date:   2017-10-31 16:00:00 +0800
+date:   2017-11-02 16:00:00 +0800
 categories: Java 
 tags: Java 
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,12 +12,14 @@ author: JiuYang Chen
 * content
 {:toc}
 
+`Java 基础补习班`
+
 
 
 HashMap 是Java中最常用的集合类框架之一。它实现了Map接口，存储的元素也是键值对映射的结构，并且允许null值和null键。
- 
+
 其元素是无序的，如果保证有序可以使用子类LinkedHashMap.
- 
+
 HashMap最常用的就是put(K,V)和get(K).HashMap中K值要保证唯一。为了保证K值唯一首先想到的是Object类的equals方法。
 
 equals方法源码
@@ -29,10 +31,10 @@ public boolean equals(Object obj) {
 }
 
 ```
- 
- 
+
+
 String类重写的equals方法源码：
- 
+
 ```java
  
  public boolean equals(Object anObject) {

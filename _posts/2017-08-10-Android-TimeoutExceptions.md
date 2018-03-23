@@ -4,7 +4,7 @@ title:  " Android TimeoutExceptions及 wakelock"
 date:   2017-08-10 20:00:00 +0800
 categories: Android 
 tags: Android 
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -13,10 +13,10 @@ author: JiuYang Chen
 {:toc}
 
 
+本篇简单介绍调试机器人出现的`TimeoutExceptions`问题 `Android 4.4`。
 
 
 
-本篇简单介绍调试机器人出现的`TimeoutExceptions`问题。
 
 ## 问题描述
 

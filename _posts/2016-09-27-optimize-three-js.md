@@ -4,7 +4,7 @@ title:  "three.js 性能优化的几种方法"
 date:   2016-09-27 22:00:00 +0800
 categories: three.js JavaScript
 tags: three.js JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

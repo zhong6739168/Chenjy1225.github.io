@@ -4,7 +4,7 @@ title:  " Android wechat 分享"
 date:   2017-08-15 19:00:00 +0800
 categories: Android 
 tags: Android 
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,11 +12,11 @@ author: JiuYang Chen
 * content
 {:toc}
 
+本篇简单介绍`Android App`中接入`wechat`分享流程。
 
 
 
 
-本篇简单介绍`Android App`中接入`wechat`分享。
 
 ## `wechat`分享
 
@@ -112,7 +112,7 @@ public class WXEntryActivity extends AppCompatActivity implements IWXAPIEventHan
     }
 }
 
-``` 
+```
 
 4.4 创建一个 WXActivity 用于发送请求
 
@@ -199,7 +199,7 @@ public class WXActivity extends AppCompatActivity {
 
 			
 ```
-			
+
 ![output](http://wx2.sinaimg.cn/mw690/c584f169ly1fksetdx8y5j206h0303yb.jpg)
 
 其他分享示例可以参照，[其他格式示例](https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419317340&token=&lang=zh_CN)

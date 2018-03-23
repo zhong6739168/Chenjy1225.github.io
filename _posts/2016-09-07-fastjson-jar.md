@@ -4,24 +4,24 @@ title:  "fastjson 配置和使用"
 date:   2016-09-07 19:00:00 +0800
 categories: Java 
 tags: Java fastjson
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content
 {:toc}
 
-
+本篇简单介绍阿里巴巴的开源JSON解析库 `fastjson`
 
 
 
 ## fastjson
 
-`fastjson`是一个很好的java实现的JSON解析和生成器，from `alibaba`。
+`fastjson`是一个很好的java实现的JSON解析和生成器，from `alibaba`。[fastjson.github](https://github.com/alibaba/fastjson)
 
 ### fastjson 下载
 
 * 使用`Maven`下载：
-(Maven使用可以参照以往的博客)
+  (Maven使用可以参照以往的博客)
 
 ```xml
 
@@ -89,7 +89,7 @@ JSONArray：
 				{"hardwareCount":1,"hardwareType":3}
 				{"hardwareCount":1,"hardwareType":4}
 	 
-```	
+```
 
 ### 迭代器
 

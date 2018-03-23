@@ -4,7 +4,7 @@ title:  "ZMQ"
 date:   2017-03-26 11:00:00 +0800
 categories: ZMQ 
 tags: ZMQ
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,8 +12,7 @@ author: JiuYang Chen
 * content
 {:toc}
 
-本篇简单介绍`ZMQ`的使用。
-
+本篇简单介绍`ZMQ`的使用。广泛应用于本公司的`Android 主板` 板间通讯、局域网通讯，学习一哈。
 
 
 

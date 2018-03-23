@@ -4,7 +4,7 @@ title:  "Android App 切换语言"
 date:   2017-05-08 20:00:00 +0800
 categories: Android  
 tags: Android
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,11 +12,10 @@ author: JiuYang Chen
 * content
 {:toc}
 
+本篇简单介绍将在`Android App`中进行语言的切换和使用`dragonFace`改系统语言。
 
 
 
-
-本篇简单介绍将在`Android App`中进行语言的切换。
 
 ## 切换语言
 
@@ -47,8 +46,23 @@ author: JiuYang Chen
 * [完整源代码](https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/Android/switchLanguage)
 
 
+## `Update 18/03/23`  使用`dragonFace`改系统语言
 
+![dragonFace](http://wx2.sinaimg.cn/mw690/c584f169ly1fpmu78q5mij20l60ddglz.jpg)
 
+```xml
+persist.sys.language=zh
+persist.sys.country=CN
+```
+
+改成
+
+```xml
+persist.sys.language=en
+persist.sys.country=US
+```
+
+保存即可
 
 
 

@@ -4,11 +4,13 @@ title:  "JavaScript 原生DOM选择器querySelector"
 date:   2016-09-05 20:00:00 +0800
 categories: JavaScript
 tags: JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content
 {:toc}
+
+`JavaScript` 原生`DOM`选择器`querySelector` 简单介绍 `是真的简单`
 
 
 

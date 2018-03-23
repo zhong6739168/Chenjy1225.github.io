@@ -4,11 +4,14 @@ title:  "JavaScript 加密方法(Hash算法)"
 date:   2016-09-05 22:00:00 +0800
 categories: JavaScript
 tags: JavaScript algorithm
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content
 {:toc}
+
+
+简单罗列`JavaScript` 中的`Hash`加密算法
 
 
 
@@ -43,7 +46,7 @@ Hash算法特点：
 * 对于两条不同消息无法给出相同的散列数值
 
 由于Hash算法的有以上特性所以常用在很多的重要应用例如数字签名，消息认证码。
-	
+​	
 
 
 ### MD5算法
@@ -125,10 +128,9 @@ SHA-512.js [SHA-512.js source code](http://pajhome.org.uk/crypt/md5/sha512.html)
 
 ### Blizzard  `one way hash`
 
-
- ***
+***
 ![outPut](http://ww3.sinaimg.cn/mw690/c584f169gw1f7jtnnkrp8j20dw0863zn.jpg)
- ***
+***
 
 据说是我大暴雪很经典的Hash算法。
 

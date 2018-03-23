@@ -4,18 +4,19 @@ title:  "Android 链接mysql数据库"
 date:   2017-03-25 11:00:00 +0800
 categories: Android 
 tags: Android mysql
-author: JiuYang Chen
+author: chenjy
 ---
+
   
-  
-  
+
 * content
 {:toc}
 
 
+本篇简单介绍`Android`链接`Mysql`数据库的方式及其操作步骤。
 
 
-本篇简单介绍`Android`链接`Mysql`数据库的方式及其操作。
+
 
 1.1 将JDBC jar包导入项目libs中。
 

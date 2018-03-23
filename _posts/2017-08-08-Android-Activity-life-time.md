@@ -4,7 +4,7 @@ title:  " Android Activity 生命周期"
 date:   2017-08-08 20:00:00 +0800
 categories: Android 
 tags: Android 
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,11 +12,11 @@ author: JiuYang Chen
 * content
 {:toc}
 
+在日常开发中（对又是日常开发）。你会发现很多逻辑如果只有`onCreate`和`onDestory`完全不够用。所以稍微系统的了解一下`Activity`生命周期的相关知识，也很有必要。
+
+本篇简单学习`Android` `Activity`生命周期的相关知识。
 
 
-
-
-本篇简单学习`Android `Activity`生命周期的相关知识。
 
 ## `Activity`
 
@@ -37,9 +37,9 @@ author: JiuYang Chen
 注：
 
 * `onPause` , 虽然`Activity`还是可见的 但大多数时候意味着用户即将离开这个`Activity`.所以在`onPause`中，你可以用来 1.停止运行的浪费cpu的操作 2.提交没有保存的修改 3.释放系统资源
-   
+
 * `onDestroy` ,应该清除那些可能导致内存泄漏的地方。并且确保所有线程都被`destroyed`并且所有操作都被停止。
-   
+
 ## `Activity` 操作
 
 1.1 从 A Activity 到 B Activity，

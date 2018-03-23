@@ -4,7 +4,7 @@ title:  "Unity 3d 隐藏GameObject"
 date:   2016-11-02 11:00:00 +0800
 categories: Unity3d C#
 tags: Unity3d C#
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

@@ -4,7 +4,7 @@ title:  "three.js-Raycaster"
 date:   2016-08-10 23:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

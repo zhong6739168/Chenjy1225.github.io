@@ -4,7 +4,7 @@ title:  "Jfinal 导出Excel（1）"
 date:   2016-12-18 19:00:00 +0800
 categories: Java
 tags: Java JFinal
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

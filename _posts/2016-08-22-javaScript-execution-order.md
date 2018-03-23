@@ -4,7 +4,7 @@ title:  "客户端 JavaScript 程序"
 date:   2016-08-22 20:00:00 +0800
 categories: JavaScript
 tags: JavaScript 线程 编译
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

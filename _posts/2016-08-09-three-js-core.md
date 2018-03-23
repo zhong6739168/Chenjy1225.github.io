@@ -4,7 +4,7 @@ title:  "three.js-core"
 date:   2016-08-09 20:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

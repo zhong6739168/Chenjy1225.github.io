@@ -4,7 +4,7 @@ title:  "高效的数独算法-位运算"
 date:   2017-04-25 20:00:00 +0800
 categories: Java 
 tags: Java
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -13,10 +13,10 @@ author: JiuYang Chen
 {:toc}
 
 
+本篇通过一个数独问题，介绍一种高效的`数独算法`通过位运算。
 
 
 
-本篇介绍一种高效的`数独算法`通过位运算。
 
 ## 简介
 

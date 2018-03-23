@@ -4,7 +4,7 @@ title:  "three.js-shadow"
 date:   2016-08-09 22:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

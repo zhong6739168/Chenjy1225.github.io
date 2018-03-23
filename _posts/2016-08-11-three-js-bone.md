@@ -4,7 +4,7 @@ title:  "three.js-bone"
 date:   2016-08-12 12:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL Bone 
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

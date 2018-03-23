@@ -4,7 +4,7 @@ title:  "使用Maven下载依赖包及使用Nexus搭建私服"
 date:   2016-09-01 22:00:00 +0800
 categories: Maven Nexus 
 tags: Maven Nexus 
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

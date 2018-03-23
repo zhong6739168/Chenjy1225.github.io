@@ -4,7 +4,7 @@ title:  "three.js-physics engine"
 date:   2016-08-26 07:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL physijs
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

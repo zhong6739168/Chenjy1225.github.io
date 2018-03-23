@@ -4,7 +4,7 @@ title:  "three.js-binary operator"
 date:   2016-08-15 20:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL THREEBSP
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

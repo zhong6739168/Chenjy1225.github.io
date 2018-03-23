@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "常用的正则表达式"
+title:  "JavaScript中常用的正则表达式"
 date:   2016-06-01 20:00:00 +0800
 categories: JavaScript
 tags: JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content
 {:toc}
+
+
+本篇收集了部分`JavaScript`中常用的正则表达式
 
 
 
@@ -19,15 +22,15 @@ author: JiuYang Chen
 
 ```js
 
-	var regExp = /([\u4e00-\u9fa5]+)/; 
+var regExp = /([\u4e00-\u9fa5]+)/; 
 
 ```
-	
+
 ### 匹配存在双字节字符(至少一个)
 
 ```js
 
-    var regExp = /([^\x00-\xff]+)/; 
+var regExp = /([^\x00-\xff]+)/; 
 	
 ```
 
@@ -35,7 +38,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /^[\u4e00-\u9fa5]*$/;
+var regExp = /^[\u4e00-\u9fa5]*$/;
 	
 ```
 
@@ -43,7 +46,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /\d+/;  /[0-9]+/;
+var regExp = /\d+/;  /[0-9]+/;
 	
 ```
 
@@ -51,7 +54,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /^\d*$/;  /^[0-9]*$/;
+var regExp = /^\d*$/;  /^[0-9]*$/;
 
 ```
 
@@ -59,7 +62,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /[a-zA-Z]+/;
+var regExp = /[a-zA-Z]+/;
 
 ```
 
@@ -67,7 +70,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /^[a-zA-Z]*$/;
+var regExp = /^[a-zA-Z]*$/;
 
 ```
 
@@ -75,7 +78,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /^[0-9a-zA-Z]*$/;
+var regExp = /^[0-9a-zA-Z]*$/;
 	
 ```
 
@@ -83,21 +86,21 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /^[0-9a-zA-Z~/`!@#$%^&*()_+|{}?;:><\-\]\\[\/]*$/;
+var regExp = /^[0-9a-zA-Z~/`!@#$%^&*()_+|{}?;:><\-\]\\[\/]*$/;
 	
 ```
 
 ### 匹配由数字和字母组成，且必须包含数字和字母
-    
+
 ```js	
 
-	/*
-	 (?![0-9]+$)不全是数字
-	 (?![a-zA-Z]+$)不全是字母
-	 [0-9A-Za-z]{6,10} 由数字和字母组成的6~10位
-	*/
-    
-	var regExp = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/;
+/*
+(?![0-9]+$)不全是数字
+(?![a-zA-Z]+$)不全是字母
+[0-9A-Za-z]{6,10} 由数字和字母组成的6~10位
+*/
+
+var regExp = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,10}$/;
 	
 ```
 
@@ -105,14 +108,13 @@ author: JiuYang Chen
 
 ```js
 
-	/*  1开通的 11位数字 */
-	
-	var regExp =/^[1][0-9]{10}$/; 
-	
-	/*  国内手机号 */
-	
-	var regExp =/0?(13|14|15|18)[0-9]{9}/;
-	
+/*  1开通的 11位数字 */
+
+var regExp =/^[1][0-9]{10}$/; 
+
+/*  国内手机号 */
+
+var regExp =/0?(13|14|15|18)[0-9]{9}/;
 	
 ```
 
@@ -120,7 +122,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
+var regExp = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
 	
 ```
 
@@ -128,7 +130,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /^((https|http|ftp|rtsp|mms)?:\/\/)[^\s]+/;
+var regExp = /^((https|http|ftp|rtsp|mms)?:\/\/)[^\s]+/;
 	
 ```
 
@@ -136,7 +138,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp = /[0-9-()（）]{7,18}/;
+var regExp = /[0-9-()（）]{7,18}/;
 	
 ```
 
@@ -144,7 +146,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp =/[1-9]([0-9]{5,11})/;
+var regExp =/[1-9]([0-9]{5,11})/;
 	
 ```
 
@@ -152,7 +154,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp =/\d{6}/;
+var regExp =/\d{6}/;
 	
 ```
 
@@ -160,15 +162,15 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp =/(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)/;
+var regExp =/(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)\.(25[0-5]|2[0-4]\d|[0-1]\d{2}|[1-9]?\d)/;
 	
 ```
 
 ### 身份证号
- 
+
 ```js
  
-    var regExp=/\d{17}[\d|x]|\d{15}/;
+ var regExp=/\d{17}[\d|x]|\d{15}/;
 	
 ```
 
@@ -176,7 +178,7 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp =/\d{4}(\-|\/|.)\d{1,2}\1\d{1,2}/;
+var regExp =/\d{4}(\-|\/|.)\d{1,2}\1\d{1,2}/;
 	
 ```
 
@@ -184,21 +186,21 @@ author: JiuYang Chen
 
 ```js
 
-    var regExp =/^\d*(?:\.\d{0,2})?$/;
+var regExp =/^\d*(?:\.\d{0,2})?$/;
 	
 ```
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+​	
+​	
+​	
+​	
+​	
+​	
+​	
+​	
+​	
+​	
+​	
+​	
+​	

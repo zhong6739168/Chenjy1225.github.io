@@ -4,7 +4,7 @@ title:  "JavaScript原生css类操作方法"
 date:   2016-09-04 23:00:00 +0800
 categories: JavaScript
 tags: JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

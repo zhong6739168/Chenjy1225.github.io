@@ -4,7 +4,7 @@ title:  "Android SharedPreferences"
 date:   2017-04-10 14:00:00 +0800
 categories: Android 
 tags: Android
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,11 +12,12 @@ author: JiuYang Chen
 * content
 {:toc}
 
+在日常的开发工作中，经常需要将一些少量配置信息（机器或是设备）持久化的保存在本地。这时候使用数据库就会闲的很笨重，而且确实如此。`SharedPreferences`作为一个很轻量级存储类是比较好的选择
+
+本篇就此简单SharedPreferences的应用。
 
 
 
-
-本篇简单SharedPreferences的应用。
 
 ## `SharedPreferences`简介
 
@@ -155,8 +156,11 @@ public class MainActivity extends Activity {
 ![outPut](http://wx2.sinaimg.cn/mw690/c584f169ly1fexqek5atrj20af08yq2y.jpg)
 
 
+## `SharedPreferences`使用`tips`
 
+* 存储位置：文件存储在`Android` 目录下 `data\data\程序包名\shared_prefs`
 
+* 存储大小：`SharedPreferences` 会在创建的时候把整个文件加载进内存，而且很持久的存在。如果`SharedPreferences`过大 线程阻塞、卡顿、GC都会有的。
 
 
 

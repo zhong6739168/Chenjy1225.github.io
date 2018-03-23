@@ -4,19 +4,19 @@ title:  "Android 高效的`InjectView – ButterKnife`"
 date:   2017-04-16 14:00:00 +0800
 categories: Android 
 tags: Android
-author: JiuYang Chen
+author: chenjy
 ---
-
 
 
 * content
 {:toc}
 
-
-
-
+在日常的Android 重复、大量的view初始化、绑定、监听等工作总会让人觉得很繁琐。这时候使用依赖注入的开源框架`ButterKnife`就很有必要了。
 
 本篇简单一种高效的`View`绑定方式`InjectView – ButterKnife`。
+
+
+
 
 ## `InjectView`简介
 

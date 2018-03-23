@@ -1,14 +1,17 @@
 ---
 layout: post
-title:  "JavaScript 循环中异步加载问题"
+title:  "three.js循环加载模型bug"
 date:   2016-08-21 07:00:00 +0800
 categories: three.js
-tags: three.js JavaScript 
-author: JiuYang Chen
+tags: three.js JavaScript bug
+author: chenjy
 ---
 
 * content
 {:toc}
+
+在使用Three.js中 使用for循环加载`obj模型`出现的`bug`
+
 
 
 

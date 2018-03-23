@@ -4,7 +4,7 @@ title:  "java Netty tcp通讯"
 date:   2017-05-08 20:00:00 +0800
 categories: Java 
 tags: Java Netty tcp
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -12,11 +12,11 @@ author: JiuYang Chen
 * content
 {:toc}
 
-
-
-
-
 本篇简单介绍`java`基于高性能网络框架`Netty`的`tcp`通讯。
+
+
+
+
 
 ## `Netty`
 
@@ -282,7 +282,7 @@ public class TcpServerHandler extends SimpleChannelInboundHandler<Object> {
 * deregister  请求Channel从它的EventLoop上解除注册
 
 * read        请求从Channel中读更多的数据
- 
+
 * write       请求通过Channel刷队列数据到远端
 
 * flush       请求通过Channel写数据到远端

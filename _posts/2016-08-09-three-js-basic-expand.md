@@ -4,7 +4,7 @@ title:  "three.js-Basic-Expand"
 date:   2016-08-09 18:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL Detector.js stats.js dat.gui.js tween.js
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

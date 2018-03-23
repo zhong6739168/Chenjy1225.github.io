@@ -4,7 +4,7 @@ title:  "Unity3d 动画系统"
 date:   2016-10-14 20:00:00 +0800
 categories: Unity3d C#
 tags: Unity3d C#
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

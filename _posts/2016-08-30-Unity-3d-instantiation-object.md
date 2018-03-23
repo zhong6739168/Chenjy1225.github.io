@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "Unity3d 实例化对象"
+title:  "Unity3d 实例化对象 bug"
 date:   2016-08-30 20:00:00 +0800
 categories: Unity3d
-tags: Unity3d C#
-author: JiuYang Chen
+tags: Unity3d C# bug
+author: chenjy
 ---
 
 * content
 {:toc}
+
+`unity3D`新手上路  实例化对象出现的`bug`
 
 
 

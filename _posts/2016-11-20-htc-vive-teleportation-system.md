@@ -4,7 +4,7 @@ title:  "htc vive 抛物线指针的传送系统"
 date:   2016-11-20 20:00:00 +0800
 categories: htc_vive
 tags: htc_vive
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

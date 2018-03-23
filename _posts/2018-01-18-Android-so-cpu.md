@@ -4,7 +4,7 @@ title:  " Android so文件"
 date:   2018-01-18 11:00:00 +0800
 categories: Android 
 tags: Android 
-author: JiuYang Chen
+author: chenjy
 ---
 
 

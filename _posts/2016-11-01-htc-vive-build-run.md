@@ -4,7 +4,7 @@ title:  "htc vive 安装和使用"
 date:   2016-11-01 20:00:00 +0800
 categories: htc_vive
 tags: htc_vive
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

@@ -4,7 +4,7 @@ title:  "three.js needsUpdate 方法"
 date:   2016-09-27 20:00:00 +0800
 categories: three.js JavaScript
 tags: three.js JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

@@ -4,7 +4,7 @@ title:  "Unity 3d 几种Update"
 date:   2016-11-08 11:00:00 +0800
 categories: Unity3d C#
 tags: Unity3d C#
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

@@ -4,7 +4,7 @@ title:  "Java Format String"
 date:   2017-11-06 16:00:00 +0800
 categories: Java 
 tags: Java 
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -13,9 +13,10 @@ author: JiuYang Chen
 {:toc}
 
 
+本篇博客介绍java中使用`printf`格式化`String`字符串，孤陋寡闻当然要学习一下。
 
 
-本篇博客介绍java中String字符串的格式化。
+
 
 熟悉c语言的开发者经常使用 printf方法来格式化String字符串。在java中PrintStream类提供了printf方法来完成同样的功能。
 

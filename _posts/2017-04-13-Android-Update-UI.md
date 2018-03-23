@@ -4,7 +4,7 @@ title:  "Android 更新UI"
 date:   2017-04-10 14:00:00 +0800
 categories: Android 
 tags: Android
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -13,10 +13,9 @@ author: JiuYang Chen
 {:toc}
 
 
+本篇简单`Android`里面更新`UI`的四种方法。很基础我喜欢。
 
 
-
-本篇简单`Android`里面更新`UI`的四种方法。
 
 ## 更新`UI`简介
 

@@ -4,7 +4,7 @@ title:  "three.js-model"
 date:   2016-08-11 20:00:00 +0800
 categories: three.js
 tags: three.js javaScript WebGL OBJ
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

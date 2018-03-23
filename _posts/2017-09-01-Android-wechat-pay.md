@@ -4,7 +4,7 @@ title:  " Android wechat 支付"
 date:   2017-09-01 19:00:00 +0800
 categories: Android 
 tags: Android 
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -13,10 +13,9 @@ author: JiuYang Chen
 {:toc}
 
 
+本篇简单介绍`Android App`中接入微信支付，包括`App`内支付和扫码支付。`分享+支付` `pofei`
 
 
-
-本篇简单介绍`Android App`中接入微信支付，包括`App`内支付和扫码支付。
 
 ## 微信支付
 
@@ -26,13 +25,13 @@ author: JiuYang Chen
 ### `App`内支付
 
 可以参照 [Android 微信支付详解与Demo](http://blog.csdn.net/simon_crystin/article/details/53433504)
-         
+​         
 * [源码下载](http://download.csdn.net/download/simon_crystin/9699743)
 
 主要流程：
 
 1.1 微信支付平台注册账号 
-    
+​    
 * 注：注册并申请成功以后，需要在API安全中设置你的API密钥 32个字符。建议使用 [MD5加密](http://tool.chinaz.com/Tools/md5.aspx) ,并且需要妥善的保存。因为无法查看。
 
 2.2 生成预支付订单 

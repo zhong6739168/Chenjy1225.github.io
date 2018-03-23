@@ -4,7 +4,7 @@ title:  "Jfinal 列表分页"
 date:   2016-12-12 19:00:00 +0800
 categories: Java
 tags: Java JFinal
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

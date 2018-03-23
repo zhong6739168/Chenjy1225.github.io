@@ -4,7 +4,7 @@ title:  "Unity3d Final IK 插件的使用"
 date:   2016-10-12 20:00:00 +0800
 categories: Unity3d C#
 tags: Unity3d C#
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

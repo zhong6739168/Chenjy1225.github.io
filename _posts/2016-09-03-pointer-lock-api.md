@@ -4,7 +4,7 @@ title:  "Pointer Lock API"
 date:   2016-09-03 09:00:00 +0800
 categories: JavaScript
 tags: JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

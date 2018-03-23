@@ -4,14 +4,13 @@ title:  "blog 运行端口占用"
 date:   2017-03-30 11:00:00 +0800
 categories: jekyll 
 tags: jekyll
-author: JiuYang Chen
+author: chenjy
 ---
-
-
 
 * content
 {:toc}
 
+解决使用`jekyll`在本地跑博客的时候端口占用问题
 
 
 
@@ -71,7 +70,11 @@ $ tasklist /svc /FI "PID eq 2852"
 ![outPut](http://wx1.sinaimg.cn/mw690/c584f169gy1fem08jifucj20ar03lq2t.jpg)
 
 
+### jekyll tips
 
+* 本地运行 `jekyll s`
+
+* 局域网可访问 `jekyll serve -w --host=0.0.0.0` 
 
 
 

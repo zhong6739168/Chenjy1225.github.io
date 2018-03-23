@@ -4,7 +4,7 @@ title:  "JavaScript dom"
 date:   2016-07-22 20:00:00 +0800
 categories: JavaScript
 tags: JavaScript
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content
@@ -17,7 +17,7 @@ author: JiuYang Chen
 根据 DOM，HTML 文档中的每个成分都是一个节点。
 
   DOM 是这样规定的：
-  
+
 *    整个文档是一个文档节点
 *    每个 HTML 标签是一个元素节点
 *    包含在 HTML 元素中的文本是文本节点

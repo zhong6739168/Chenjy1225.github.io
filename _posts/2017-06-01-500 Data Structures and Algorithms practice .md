@@ -4,7 +4,7 @@ title:  "500 Data Structures and Algorithms practice problems and their solution
 date:   2017-08-07 20:00:00 +0800
 categories: Java 
 tags: Java
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -553,9 +553,10 @@ public static void partition(int arr[]){
 		}
 	}
 
+
 ```
 
-
+## `Update 18/03/20`也许太监了呢
 
 
 

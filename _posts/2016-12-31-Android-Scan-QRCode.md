@@ -4,7 +4,7 @@ title:  "Google-zxing 扫描二维码（2）"
 date:   2016-12-18 19:00:00 +0800
 categories: Java Android
 tags: Java Android 
-author: JiuYang Chen
+author: chenjy
 ---
 
 * content

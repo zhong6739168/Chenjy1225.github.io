@@ -4,7 +4,7 @@ title:  "java 并发库之 Executors"
 date:   2017-05-09 20:00:00 +0800
 categories: Java 
 tags: Java
-author: JiuYang Chen
+author: chenjy
 ---
 
 
@@ -115,7 +115,7 @@ public class MyExecutor extends Thread {
 计算完成之后只能通过,`Future future.get()` 来获取结果。
 
 
-## `2017/10/24 ` `update`
+## `Update 2017/10/24 ` 
 
 > `阿里编码规范` 告诉我们
 
