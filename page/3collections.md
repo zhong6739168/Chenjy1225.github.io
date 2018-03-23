@@ -158,6 +158,18 @@ icon: bookmark
 
 * [Android 调试工具Apk](http://trinea.cn/app/dev-tools.apk)
 
+* [全志A33的环境搭建](http://blog.csdn.net/jangel_lee/article/details/44306621)
+
+* [mysql 操作](http://blog.csdn.net/itluochen/article/details/52181589)
+
+* [UDP 搜索局域网内设备](http://blog.csdn.net/a10615/article/details/52427047)
+
+* [setWidth()和setHeight()没反应](http://www.cnblogs.com/dingchenghong/archive/2012/02/25/2367353.html)
+
+* [webview Android和js交互](http://blog.csdn.net/ithomer/article/details/8737999)
+
+* [flappy bird游戏源代码揭秘和下载](http://blog.csdn.net/touchsnow/article/details/19071961)
+
 ## Java
 
 * [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
@@ -190,19 +202,6 @@ icon: bookmark
 
 * [基本的架构设计模式](http://mtc.baidu.com/academy/detail/article/32)  
 
-## Android
-
-* [全志A33的环境搭建](http://blog.csdn.net/jangel_lee/article/details/44306621)
-
-* [mysql 操作](http://blog.csdn.net/itluochen/article/details/52181589)
-
-* [UDP 搜索局域网内设备](http://blog.csdn.net/a10615/article/details/52427047)
-
-* [setWidth()和setHeight()没反应](http://www.cnblogs.com/dingchenghong/archive/2012/02/25/2367353.html)
-
-* [webview Android和js交互](http://blog.csdn.net/ithomer/article/details/8737999)
-
-* [flappy bird游戏源代码揭秘和下载](http://blog.csdn.net/touchsnow/article/details/19071961)
 
 ## AGV
 
