@@ -11,7 +11,7 @@ typora-copy-images-to: ../images
 * content
 {:toc}
 
-本篇主要介绍Rayland-FDM打印机 C200 App介绍以及软件结构。
+本篇主要介绍`Rayland-FDM`打印机 `C200` App介绍以及软件结构。
 
 
 
