@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
 
 ## `SharedPreferences`使用`tips`
 
-* 存储位置：文件存储在`Android` 目录下 `data\data\程序包名\shared_prefs`
+* 存储位置：文件存储在`Android` 目录下 `data\data\程序包名\shared_prefs\程序包名_preferences.xml`
 
 * 存储大小：`SharedPreferences` 会在创建的时候把整个文件加载进内存，而且很持久的存在。如果`SharedPreferences`过大 线程阻塞、卡顿、GC都会有的。
 

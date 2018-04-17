@@ -129,7 +129,7 @@ x轴为例 如：`驱动电压`、`零点坐标`、`轴长`、`碰撞开关位�
 
 
 <div align="center">
-<img src="http://wx2.sinaimg.cn/mw690/c584f169ly1fpmuvhdlinj20h60enq44.jpg"></div>
+<img src="http://wx1.sinaimg.cn/mw690/c584f169ly1fpmuueph69j20kp0k8mxw.jpg"></div>
 
 **`assets`** 用于本地切片得默认配置文件`fdmprinter.json`，默认机器设置文件`machine.txt`，以及用于`gcode预览的js文件和html文件`
 
@@ -165,7 +165,7 @@ x轴为例 如：`驱动电压`、`零点坐标`、`轴长`、`碰撞开关位�
 
 
 <div align="center">
-<img src="{{site.baseurl}}/images/lib_pkg.png"></div>
+<img src="http://wx2.sinaimg.cn/mw690/c584f169ly1fpmuvhdlinj20h60enq44.jpg"></div>
 
 **`android_erialport_api `** 串口通信相关
 

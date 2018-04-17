@@ -63,7 +63,7 @@ author: chenjy
 			// TODO Auto-generated method stub
 			PowerManager pm = (PowerManager) getSystemService(POWER_SERVICE);
 			wakeLock = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK
-					| PowerManager.ON_AFTER_RELEASE, "DPA");
+					| PowerManager.ON_AFTER_RELEASE, "MyWakelockTag");
 
 			if (iswakeLock) {
 				wakeLock.acquire();
@@ -75,11 +75,10 @@ author: chenjy
     @Override
     protected void onPause() {
         // TODO Auto-generated method stub
-        super.onDestroy();
+        super.onPause();
         if (wakeLock != null) {
             wakeLock.release();
         }
-        android.os.Process.killProcess(android.os.Process.myPid());
     }
 
 
@@ -102,17 +101,114 @@ author: chenjy
 * `ON_AFTER_RELEASE`：设置了这个标志，当`wakelock`释放时用户`activity`计时器会被重置，导致照明持续一段时间。如果你在`wacklock`条件中循环，这个可以用来减少闪烁
 
 
+## `update` `2018/04/06`
 
+###  keep the screen on
 
+控制屏幕一直处于常亮状态
 
+1. 在`Activity`中使用  `FLAG_KEEP_SCREEN_ON`
 
+```java
 
+public class MainActivity extends Activity {
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+  }
 
+```
 
+2. 或是在`xml` 使用参数`keepScreenOn`
 
+```xml
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+    ...
+</RelativeLayout>
 
+```
 
+### keep the CPU on
+
+控制cpu一直处于工作状态
+
+` manifest file`:
+
+```xml
+
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+
+```
+
+```java
+
+PowerManager powerManager = (PowerManager) getSystemService(POWER_SERVICE);
+WakeLock wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
+        "MyWakelockTag");
+wakeLock.acquire();
+
+//  wakelock.release() /* release wakelock*/
+
+```
+
+### Using WakefulBroadcastReceiver
+
+`WakefulBroadcastReceiver` 是一种特殊的`broadcast receiver`为你的`app`提供`WAKE_LOCK`管理服务，确保在耗时任务完成之前设备不会熄屏。
+
+* 通过方法 `startWakefulService(Context, Intent)`来启动服务，启动后`WakefulBroadcastReceiver` 将自动创建一个`wakelock` ，并在`Intent`附上一个`wakelock Id`来区分 。
+
+* 最后必须调用 `completeWakefulIntent(intent)` 释放`wakelock`。
+
+`WakefulBroadcastReceiver`,`Demo`
+
+`AndroidManifest.xml`
+
+```xml
+
+<receiver android:name=".SimpleWakefulReceiver"></receiver>
+
+```
+
+启动 `WakefulBroadcastReceiver`
+
+```java
+
+public class MyWakefulReceiver extends WakefulBroadcastReceiver {            
+    @Override    
+    public void onReceive(Context context, Intent intent) {
+        Intent service = new Intent(context, MyWakefulReceiver.class);      
+        startWakefulService(context, service);    
+    }
+}
+
+```
+
+在耗时操作结束之后释放`wakelock`
+
+```java
+
+public class MyWakefulService extends IntentService {    
+    public MyWakefulService() {        
+        super("MyWakefulService");    
+    } 
+
+    @Override    
+    protected void onHandleIntent(Intent intent) {        
+        ...
+        // 执行耗时任务
+    
+        // 任务结束释放唤醒锁
+        MyWakefulReceiver.completeWakefulIntent(intent);    
+    }
+}
+
+```
 
 
 

@@ -82,7 +82,7 @@ B Activity从站顶弹出并销毁，此时 Activity 堆栈只有 A Activity。
 
 * 调用此`Activity`的`onDestroy`
 
-
+Tips：`onBackPressed` 默认实现是调用 `finish()`
 
 
 
