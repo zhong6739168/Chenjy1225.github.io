@@ -76,7 +76,7 @@ $ tasklist /svc /FI "PID eq 2852"
 
 * 局域网可访问 `jekyll serve -w --host=0.0.0.0` 
 
-
+* 是在不行咱换个端口 `jekyll serve --port 4001`
 
 
 

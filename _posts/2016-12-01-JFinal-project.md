@@ -39,9 +39,10 @@ author: chenjy
 
 `jfinal-xxx.jar` 与` jetty-server-8.1.8.jar` 拷贝至项目 `WEB-INF\lib` 下即可。
 
+* Tips:这里的`WEB-INF\lib` 为`WebRoot`目录下的和上面配置的保持一致，当然你也可以使用`WebContent`
 
  修改 <u>web.xml</u>： 
- 
+
 ```xml
  
 <filter>
@@ -118,6 +119,20 @@ public class HelloController extends Controller {
 
 * 访问http://localhost/hello
 
+
+> 上面的启动配置也可以使用一个任意的main方法代替。在任意一个类文件中添加一个main启动集成的jetty
+
+如在`DemoConfig`中：
+
+```java
+
+public static void main(String[] args) {
+	// eclipse 下的启动方式 指定端口和路径
+	JFinal.start("WebRoot", 8088, "/Demo", 5);
+}
+
+```
+
 ### 连接`mysql`数据库
 
 修改<u>DemoConfig</u>：
@@ -160,7 +175,7 @@ password =Ne0Print1202
 devMode = true
 	
 ```
- 	
+
 ### 简单的增删查改功能
 
 下面简单实现账号的增删查改。(不要太在意逻辑...)

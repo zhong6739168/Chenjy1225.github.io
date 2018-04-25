@@ -17,8 +17,39 @@ author: JiuYang Chen
 ### return break 
 
 > break is used to exit (escape) the for-loop, while-loop, switch-statement that you are currently executing.
-return will exit the entire method you are currently executing (and possibly return a value to the caller, optional).
+> return will exit the entire method you are currently executing (and possibly return a value to the caller, optional).
 
+### byte[] to String
+
+```java
+
+byte[] buffer = new byte[17];
+                    if (is != null) {
+                        int size = is.read(buffer);
+                        if(size > 0 ){
+                            String Str = new String(buffer,0,size);
+                        }
+                    }
+
+```
+
+### new Semaphore(0)
+
+```java
+
+Semaphore semaphore = new Semaphore(0);
+
+try {
+                semaphore.acquire();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+//semaphore.release();
+
+```
+
+初始化信号量为0，`semaphore.acquire()`线程会阻塞。直到`semaphore.release()`之后 信号量变为1。
 
 ## mysql
 
@@ -128,6 +159,86 @@ public class CustomerVideoView extends VideoView {
         setMeasuredDimension(width, height);
     }
 }
+
+```
+
+### 退出程序
+
+* KillProcess 
+
+```java
+
+  //结束当前程序的进程  
+  android.os.Process.killProcess(android.os.Process.myPid());
+
+```
+
+Tips:`android`中所有的`activity`都在主进程中，`在Androidmanifest.xml`中可以设置成启动不同进程，`Service`不是一个单独的进程也不是一个线程。
+
+当你Kill掉当前程序的进程时也就是说整个程序的所有线程都会结束，Service也会停止，整个程序完全退出。
+
+* System.exit
+
+```java
+
+//0表示正常退出，1表示异常退出(只要是非0的都为异常退出)，即使不传0也可以退出，该参数只是通知操作系统该程序是否是正常退出
+System.exit(0),System.exit(1)
+
+```
+
+### Can't create handler inside thread that has not called Looper.prepare()
+
+> Handler对象与其调用者在同一线程中，如果在Handler中设置了延时操作，则调用线程也会堵塞。每个Handler对象都会绑定一个Looper对象，每个Looper对象对应一个消息队列（MessageQueue）。如果在创建Handler时不指定与其绑定的Looper对象，系统默认会将当前线程的Looper绑定到该Handler上。
+
+> 在主线程中，可以直接使用new Handler()创建Handler对象，其将自动与主线程的Looper对象绑定；在非主线程中直接这样创建Handler则会报错，因为Android系统默认情况下非主线程中没有开启Looper，而Handler对象必须绑定Looper对象。
+
+
+1.手动开启`Looper`,然后将其绑定到`Handler`对象上
+
+```java
+
+final Runnable runnable = new Runnable() {
+　　@Override
+　　public void run() {
+　　　　//执行耗时操作
+　　　　try {
+　　　　　　Thread.sleep(2000);
+　　　　} catch (InterruptedException e) {
+　　　　e.printStackTrace();
+　　　　}
+　　}
+};
+new Thread() {
+　　public void run() {
+　　　　Looper.prepare();
+　　　　new Handler().post(runnable);//在子线程中直接去new 一个handler
+　　　　Looper.loop();　　　　//这种情况下，Runnable对象是运行在子线程中的，可以进行联网操作，但是不能更新UI
+　　}
+}.start();
+
+```
+
+2.通过`Looper.getMainLooper()`，获得主线程的`Looper`
+
+```java
+
+final Runnable runnable = new Runnable() {
+　　@Override
+　　public void run() {
+　　　　//执行耗时操作
+　　　　try {
+　　　　　　Thread.sleep(2000);
+　　　　} catch (InterruptedException e) {
+　　　　e.printStackTrace();
+　　　　}
+　　}
+};
+new Thread() {
+　　public void run() {
+　　　　new Handler(Looper.getMainLooper()).post(runnable);
+　　　　//这种情况下，Runnable对象是运行在主线程中的，不可以进行联网操作，但是可以更新UI
+　　}
+}.start();
 
 ```
 
