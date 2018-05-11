@@ -170,6 +170,10 @@ icon: bookmark
 
 * [flappy bird游戏源代码揭秘和下载](http://blog.csdn.net/touchsnow/article/details/19071961)
 
+* [Kotlin](https://blog.csdn.net/xiangzhihong8/article/details/80224662)
+
+  `Kotlin:`Google I/O大会上Kotlin被定为Android开发的官方语言
+
 ## Java
 
 * [Java Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
@@ -202,6 +206,11 @@ icon: bookmark
 
 * [基本的架构设计模式](http://mtc.baidu.com/academy/detail/article/32)  
 
+## 算法
+
+* [柏林噪声算法](https://cloud.tencent.com/developer/article/1005578)
+
+用于程序生成随机内容，在游戏和其他像电影等多媒体领域广泛应用。
 
 ## AGV
 
