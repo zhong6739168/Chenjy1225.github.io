@@ -162,20 +162,65 @@ public static void main(String[] args) {
 
 ```java
 
-// 向队列插入一个元素
+// 向队列插入一个元素，如果队列已满 返回false
 offer(element): boolean
 
 // 获取并删除队列头 如果队列为空返回null
 poll()：E
 
-// 获取并删除队列头 如果队列为空抛出异常
-remove()：E
-
 // 获取但不删除队列头 如果队列为空返回null
 peek()：E
 
-// 获取但不删除队列头 如果队列为空抛出异常
+// 向队列插入一个元素，如果队列已满抛出异常`IIIegaISlabEepeplian`
+add(element)：boolean
+
+// 获取并删除队列头 如果队列为空抛出异常`NoSuchElementException`
+remove()：E
+
+// 获取但不删除队列头 如果队列为空抛出异常`NoSuchElementException`
 element()：E
+
+```
+
+* `poll`和`peek`方法队列为空的时候会返回`null`，所以向队列插入`null`为不合法的
+
+* [阻塞队列](https://chenjy1225.github.io/2018/05/03/android-Linkedblockingdeque/)
+
+#### queue使用
+
+> linkedlist实现了 `deque`接口我们可以直接当队列使用
+
+
+```java
+
+java.util.Queue<Integer> queue = new LinkedList<>();
+
+        for(int i =0;i<5;i++){
+            queue.offer(i);
+        }
+
+        System.out.println("Elements of queue:"+queue);
+
+        int removedele = queue.poll();
+        System.out.println("removed element:" + removedele);
+
+        System.out.println(queue);
+
+        int head = queue.peek();
+        System.out.println("head of queue:" + head);
+
+        int size = queue.size();
+        System.out.println("Size of queue:" + size);
+        
+        /** output
+         *  Elements of queue:[0, 1, 2, 3, 4]
+         *  removed element:0
+         *  [1, 2, 3, 4]
+         *  head of queue:1
+         *  Size of queue:4
+         *
+         */
+
 ```
 
 ### map

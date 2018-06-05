@@ -81,8 +81,24 @@
         img_link: 'http://wx4.sinaimg.cn/large/c584f169ly1fi45fjj4z4g20qo0f4npt.gif',
         title: '物流AGV 交通调度管理平台',
         core_tech: 'Android AGV'
+    },{
+        demo_link: 'http://wx4.sinaimg.cn/mw690/c584f169ly1fs0fahy52kg20fs08wb2e.gif',
+        img_link: 'http://wx4.sinaimg.cn/mw690/c584f169ly1fs0fahy52kg20fs08wb2e.gif',
+        title: 'sla打印机测试demo',
+        core_tech: '3d打印'
+    },{
+        demo_link: 'http://wx1.sinaimg.cn/mw690/c584f169ly1fs0fgahyalg20fs08we88.gif',
+        img_link: 'http://wx1.sinaimg.cn/mw690/c584f169ly1fs0fgahyalg20fs08we88.gif',
+        title: 'dlp打印机测试demo',
+        core_tech: '3d打印'
+    },{
+        demo_link: 'http://wx1.sinaimg.cn/mw690/c584f169ly1fs0fucjwy9g20fs08wqva.gif',
+        img_link: 'http://wx1.sinaimg.cn/mw690/c584f169ly1fs0fucjwy9g20fs08wqva.gif',
+        title: 'socket 文件上传',
+        core_tech: 'Android'
     }];
 
+	
     contentInit(demoContent) //内容初始化
     waitImgsLoad() //等待图片加载，并执行布局初始化
 }());

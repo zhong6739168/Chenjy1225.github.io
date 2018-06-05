@@ -24,6 +24,11 @@ author: chenjy
 
 `uploadify`使用：
 
+```html
+
+<input id="file_upload_1" name="file_upload" type="file" multiple="true">  
+
+```
 
 ```js
 
@@ -38,6 +43,8 @@ author: chenjy
 		        uploader      : 'upload/upload',
 				buttonText    : '上传图片',
 		        width         : 120,
+		        fileSizeLimit : '500MB',
+		        
 				onUploadSuccess : function(file, data, response) {
 					 var root = $.parseJSON(data);
 					     fileRoot = root.fileRoot;
@@ -45,6 +52,9 @@ author: chenjy
 		    });
 
 ```
+
+
+> more in [uploadify](http://www.uploadify.com/documentation/)
 
 
 ![outPut](http://ww2.sinaimg.cn/mw690/c584f169gw1fb34rrliptj20df02f3yd.jpg)
@@ -135,7 +145,19 @@ public class UploadController extends Controller {
 
 ![outPut](http://ww1.sinaimg.cn/mw690/c584f169gw1fb34rrah9bj20bh0eygm2.jpg)
 
-
-
+> Tips: 在文件上传表单中如果存在其他请求参数，在后端处理时，要先处理`file`请求，再处理其他请求参数，否则同样获取不到其他参数
 
 [源代码](https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/JFinal_demo_upload)
+
+### 兼容性问题
+
+上传插件`uploadify`新版本`chrome v59`无法正常使用
+
+需要在`chrome://settings/content/flash` ,设置`flash`允许网站使用flash即可。
+
+但是这个也太麻烦了吧！！！
+
+## web uploader
+
+我们可以用`web uploader`替换之 [web uploader](http://fex.baidu.com/webuploader/)
+

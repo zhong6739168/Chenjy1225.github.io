@@ -385,4 +385,30 @@ public static final User dao = new User();
 ```
 
 
+## 项目部署
+
+1.1 `Jfinal`项目部署和web项目相同，将项目webroot下的文件（包括webroot）拷贝到服务器`tomcat`的webapps目录下面。
+
+2.2 然后删除webroot中的` jetty-server-8.1.8.jar`jar包
+
+3.3` startup` 运行`tomcat`即可
+
+
+Tips: 项目`JDK版本`要和服务器`JDK`版本一致，高版本编译的项目不能跑在低版本上面。
+
+Tips: 使用`render html` `404`，可以使用`redirect`
+
+
+>1：redirect 是重定向，当服务端向客户端响应 redirect后，并没有提供任何view数据进行渲染，仅仅是告诉浏览器响应为 redirect，以及重定向的目标地址
+>
+>2：浏览器收到服务端 redirect 过来的响应，会再次发起一个 http 请求
+>
+>3：由于是浏览器再次发起了一个新的 http 请求，所以浏览器地址栏中的 url 会发生变化
+>
+>4：浏览中最终得到的页面是最后这个 redirect  url 请求后的页面
+>
+>5：所以redirect("/user/login.html") 相当于你在浏览器中手动输入 localhost/user/login.html
+
+
+
 [源代码](https://github.com/Chenjy1225/ChenjyDemo/tree/gh-pages/JFinal_demo)

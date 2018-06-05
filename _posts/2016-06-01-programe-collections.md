@@ -14,12 +14,45 @@ author: JiuYang Chen
 
 ## Java
 
+### byte & 0xff
+
+```java
+
+ byte[] b = new byte[1];
+        b[0] = -127;
+
+        System.out.println("b[0]:"+b[0]+"; b[0]&0xff:"+(b[0] & 0xff));
+
+//output:b[0]:-127; b[0]&0xff:129
+
+```
+
+计算机内二进制都是补码形式存储：
+
+`b[0]:` 补码，10000001（8bit）
+
+`b[0]`以`int`输出：int（32bit）,补位1。11111111 11111111 11111111 10000001（32bit）
+和原数一致
+
+`b[0]&0xff`:11111111 11111111 11111111 10000001（32bit） & 11111111 =
+00000000 00000000 00000000 10000001
+
+低精度转成高精度数据类型，有两种扩展方案。（1）补零扩展 （2）符号位扩展
+
+对于正数两种是一样的。
+
+* 使用补零扩展能够保证二进制存储的一致性，但不能保证十进制值不变
+
+* 使用补符号位扩展能够保证十进制值不变，但不能保证二进制存储的一致性
+
+> 对于有符号类型，Java使用的是补符号位扩展，这样能保证十进制的值不变
+
 ### return break 
 
 > break is used to exit (escape) the for-loop, while-loop, switch-statement that you are currently executing.
 > return will exit the entire method you are currently executing (and possibly return a value to the caller, optional).
 
-### byte[] to String
+### inputstream byte[] to String
 
 ```java
 
@@ -32,6 +65,65 @@ byte[] buffer = new byte[17];
                     }
 
 ```
+
+### Stm32 send packet
+
+```java
+
+        byte[] packet = new byte[len];
+        packet[0] = (byte) type;
+        packet[1] = (byte) len;
+        packet[2] = (byte) seq;
+        packet[3] = (byte)(isreset?1:0);
+        packet[4] = (byte) vx;
+        packet[5] = (byte)(vx >>8);
+        packet[6] = (byte) vy;
+        packet[7] = (byte)(vy >>8 );
+        
+       // 
+        System.arraycopy(command.toDatas(), 0, packet, 3, command.getLen());
+
+
+       int Seq = (datas[0]&0XFF);
+       int vx = (datas[1]&0XFF) | ((datas[2])<<8));
+       int Vy = ((datas[3]&0XFF) | ((datas[4])<<8));
+       boolean Motostatel = ((datas[4] & (1 << 1))!=0);
+       boolean Motostater = ((datas[4] & (1 << 2))!=0);
+```
+
+* System.arraycopy(Object src,int srcPos,Object dest,int destPos,int length)
+
+* `src`:源数组
+
+* `srcPos`:源数组起始位置
+
+* `dest`:目标数组
+
+* `destPos`:目标数组起始位置
+
+* `length`:长度
+
+Tips: `src`和`dest`是要可以互相转换或是同类型的数组
+
+Tips:
+
+可以自己复制自己
+
+```java
+
+int[] src ={0,1,2,3,4,5,6}; 
+
+System.arraycopy(src,0,src,3,3);
+
+// output:{0,1,2,0,1,2,6}
+
+```
+
+生成一个长度为`length`的临时数组,将`fun`数组中`srcPos` 
+到`srcPos+length-1`之间的数据拷贝到临时数组中，再执行`System.arraycopy(临时数组,0,fun,3,3)`
+
+
+
 
 ### new Semaphore(0)
 
@@ -72,6 +164,38 @@ try {
 
 ## Android
 
+### 权限
+
+#### root
+
+在`linux`系统中是只有`root权限`和`普通权限`,root即是最高权限。
+
+`Android`获取`root`其实和`Linux`获取root权限一样。Linux下获取root权限的时候就是执行`sudo`或者`su`。
+
+Android本身就不想让你获得Root权限，大部分手机出厂的时候根本就没有su这个程序。所以你想获得Android的root权限，第一步就是要把编译好的su文件拷贝到Android手机的`/system/bin`或者`/system/xbin/`目录下。接下来你可以在Android手机的adb shell或者串口下输入su了。
+
+
+
+### getColor() 过时
+
+```java
+
+// 过时
+textView.setTextColor(getResources().getColor(R.color.text_color));
+
+textView.setTextColor(ContextCompat.getColor(this,R.color.text_color));
+
+```
+
+###  Installation error:INSTALL_FAILED_UID_CHANGED
+
+尝试通过ADB删除产生冲突的数据文件
+
+```cmd
+
+adb rm -rf /data/data/<your.package.name>
+
+```
 ###  setHeight  no use
 
 当设置的高度比原来默认的高度要小时,调整setHeight是不生效的。
@@ -117,8 +241,9 @@ editText.getLayoutParams().height = 100;
 
 <?xml version="1.0" encoding="UTF-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#00000000"/>
-    <stroke android:width="1dp" android:color="#000000"/>
+    <solid android:color="#418bdc"/>
+    <corners android:radius="2dp"/>
+    <stroke android:width="2dp" android:color="#303f9f"/>
     <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp" />
 </shape>
 
@@ -241,6 +366,102 @@ new Thread() {
 }.start();
 
 ```
+
+### xxx is not an enclosing class
+
+* 一般出现在内部类中，若要创建内部类的实例，需要有外部类的实例才行，或者是将内部类设置为静态的，添加 `static` 关键字
+
+```java
+
+public class A {  
+    public class B {  
+          
+    }  
+}
+
+A a = new A();  
+A.B ab = a.new B();  
+
+```
+
+### there is no default constructor available in ...
+
+子类中使用了无参构造方法，而它的父类中至少有一个没有无参的构造方法。
+
+* 如果一个类没有构造方法，会有一个默认的无参构造方法。
+* 如果显示的定义了带参构造方法则默认的无参构造方法就会失效。
+
+* 一个类只要有父类，那么在它实例化的时候，一定是从顶级的父类开始创建
+
+> 子类使用无参构造函数创建子类对象时，会去先递归调用父类的无参构造方法，这时候如果某个类的父类没有无参构造方法就会出错
+
+错误实例：
+
+```java
+
+public class Parent{
+
+        int aga;
+
+        public Parent(int age){
+            this.aga = age;
+        }
+    }
+
+    public class Child extends Parent{
+
+        public Child(){
+          /*
+           * 默认调用父类的无参构造方法 
+           * super();
+           */
+        }
+    }
+
+
+```
+
+> 如果子类使用带参参构造函数创建子类对象时，没有使用super先调用父类的带参构造方法，这时默认会调用父类的无参构造方法，如果父类没有也会报错
+
+错误实例：
+
+```java
+
+public class Parent{
+
+        int aga;
+
+        public Parent(int age){
+            this.aga = age;
+        }
+    }
+
+    public class Child extends Parent{
+
+        public Child(int age){
+          /*
+           * 默认调用父类的无参构造方法 
+           * super();
+           */
+        }
+    }
+
+
+```
+
+上述也可以在子类调用父类的有参构造函数
+
+```java
+
+ public class Child extends Parent{
+
+        public Child(int age){
+        super(age);
+        }
+    }
+
+```
+
 
 ## JFinal
 

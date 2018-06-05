@@ -39,10 +39,13 @@ author: chenjy
 ```java
 
 public class Gpx {
-	private Gpx(){}
-	
-		System.loadLibrary("raylandGpx");
-    }   
+
+	static {
+        System.loadLibrary("raylandGpx");
+    }
+    
+	//java调c/c++中的方法都需要用native声明且方法名必须和c的方法名一样
+    public native String getString();
 }
 
 ```

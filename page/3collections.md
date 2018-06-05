@@ -228,6 +228,10 @@ icon: bookmark
 
 * [G-code](http://reprap.org/wiki/G-code#G91:_Set_to_Relative_Positioning) ：G-code API
 
+* [Slic3r](https://github.com/slic3r/Slic3r)：开源切片软件`slic3r` ，提供`stl to svg`
+
+* [Cura](https://github.com/Ultimaker/Cura) ：开源切片软件`Cura`，提供`stl to gcode`
+
 ## Other
 
 * [python教程](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
